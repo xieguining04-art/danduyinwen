@@ -1,6 +1,6 @@
 import { company } from "./company";
 
-export const GA4_MEASUREMENT_ID = "G-G1G4DZNQ9P";
+export const GA4_MEASUREMENT_ID = "G-G1G4DZN09P";
 export const CONSENT_STORAGE_KEY = "tengyoda.analytics-consent.v1";
 export const PREFERENCES_EVENT = "tengyoda:analytics-preferences";
 const consentLifetime = 180 * 24 * 60 * 60 * 1000;

@@ -4,5 +4,15 @@ export const basePath = configuredBasePath === "/" ? "" : configuredBasePath.rep
 
 export function sitePath(path: string): string {
   if (!path.startsWith("/") || path.startsWith("//")) return path;
-  return `${basePath}${path}`;
+
+  const match = path.match(/^([^?#]*)([?#].*)?$/);
+  const pathname = match?.[1] ?? path;
+  const suffix = match?.[2] ?? "";
+  const lastSegment = pathname.split("/").pop() ?? "";
+  const normalizedPath =
+    pathname === "/" || pathname.endsWith("/") || lastSegment.includes(".")
+      ? pathname
+      : `${pathname}/`;
+
+  return `${basePath}${normalizedPath}${suffix}`;
 }

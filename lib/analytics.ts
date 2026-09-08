@@ -8,7 +8,7 @@ const consentLifetime = 180 * 24 * 60 * 60 * 1000;
 // Only public content routes are measured. Never send search strings, fragments,
 // arbitrary URL paths, contact URLs, message text or visitor-entered values.
 export const measuredPaths = new Set([
-  "/", "/services", "/blog",
+  "/", "/about", "/services", "/blog",
   "/services/freight-forwarding", "/services/china-import-export",
   "/services/air-freight", "/services/oversize-freight", "/services/sea-freight",
   "/services/transport-warehousing", "/services/roro-project-cargo",

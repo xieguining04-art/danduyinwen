@@ -3565,7 +3565,7 @@ export const markdownPosts: BlogPost[] = [
             },
             {
               "type": "paragraph",
-              "text": "For a deeper cost breakdown, see our [Australia destination charges section](/blog/china-australia-shipping-cost#destination)."
+              "text": "For a deeper cost breakdown, see our [Australia destination charges section](/blog/china-australia-shipping-cost/#8-australian-destination-charges)."
             }
           ]
         },
@@ -5188,7 +5188,7 @@ export const markdownPosts: BlogPost[] = [
             },
             {
               "type": "paragraph",
-              "text": "[Review our company profile](/#about) or [send your cargo details to Vinson](https://wa.me/8618620244613)."
+              "text": "[Review our company profile](/about/) or [send your cargo details to Vinson](https://wa.me/8618620244613)."
             }
           ]
         }

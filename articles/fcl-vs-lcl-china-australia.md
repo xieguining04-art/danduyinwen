@@ -89,7 +89,7 @@ Always compare the **total destination cost**, not only the China-side
 freight.
 
 For a deeper cost breakdown, see our [Australia destination charges
-section](/blog/china-australia-shipping-cost#destination).
+section](/blog/china-australia-shipping-cost/#8-australian-destination-charges).
 
 ## 5. FCL vs LCL transit time
 

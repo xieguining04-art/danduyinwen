@@ -117,4 +117,4 @@ TengYoda Logistics is a China-based freight forwarder with more than ten years o
 
 Our service network covers the Middle East, Red Sea, India and Pakistan, Europe, the Mediterranean, Africa, the east and west coasts of South America, North America, Australia and Southeast Asia. We review cargo details, origin handling and destination requirements before defining the shipment scope.
 
-[Review our company profile](/#about) or [send your cargo details to Vinson](https://wa.me/8618620244613).
+[Review our company profile](/about/) or [send your cargo details to Vinson](https://wa.me/8618620244613).

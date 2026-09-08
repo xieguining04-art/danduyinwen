@@ -15,11 +15,11 @@ export function Brand() {
   return <a className="brand" href={sitePath("/")} aria-label="TengYoda Logistics home"><span><strong>TengYoda<span className="brand-chevron" aria-hidden="true">›</span></strong><small>GLOBAL LOGISTICS</small></span></a>;
 }
 
-export function SiteHeader({ active }: { active?: "blog" | "services" }) {
+export function SiteHeader({ active }: { active?: "about" | "blog" | "services" }) {
   const [navigationValue, setNavigationValue] = useState("");
   const servicesOpen = navigationValue === "services";
   const quoteUrl = enquiryLinks().whatsapp;
-  const links = [["/#about", "About Us"], ["/blog", "Blog"], ["/#contact", "Contact Us"]];
+  const links = [["/about", "About Us"], ["/blog", "Blog"], ["/#contact", "Contact Us"]];
   const serviceLinks = services.map(service => <NavigationMenuLink asChild key={service.slug}><a href={sitePath(`/services/${service.slug}`)} className="mega-service-link"><strong>{serviceLabel(service)}</strong><ArrowRight aria-hidden="true" /></a></NavigationMenuLink>);
   return <>
     <a className="skip-link" href="#main-content">Skip to main content</a>
@@ -27,7 +27,7 @@ export function SiteHeader({ active }: { active?: "blog" | "services" }) {
     <header className="main-header"><div className="wrap header-inner"><Brand />
       <NavigationMenu viewport={false} delayDuration={0} skipDelayDuration={0} value={navigationValue} onValueChange={setNavigationValue} className="site-navigation" aria-label="Main navigation">
         <NavigationMenuList className="site-navigation-list">
-          <NavigationMenuItem><NavigationMenuLink asChild><a className="nav-top-link" href={sitePath("/#about")}>About Us</a></NavigationMenuLink></NavigationMenuItem>
+          <NavigationMenuItem><NavigationMenuLink asChild active={active === "about"}><a className="nav-top-link" href={sitePath("/about")} aria-current={active === "about" ? "page" : undefined}>About Us</a></NavigationMenuLink></NavigationMenuItem>
           <NavigationMenuItem
             value="services"
             className="mega-item"
@@ -42,7 +42,7 @@ export function SiteHeader({ active }: { active?: "blog" | "services" }) {
         </NavigationMenuList>
       </NavigationMenu>
       <a className="header-call" href={quoteUrl} target="_blank" rel="noreferrer"><span>NEED A CUSTOM SOLUTION?</span><b>Speak to an expert</b><ArrowRight /></a>
-      <Sheet><SheetTrigger asChild><Button className="menu-button" variant="ghost" size="icon" aria-label="Open navigation"><Menu /></Button></SheetTrigger><SheetContent className="mobile-sheet"><SheetHeader><SheetTitle>TengYoda Logistics</SheetTitle><SheetDescription>Global sea freight booking and China-side support</SheetDescription></SheetHeader><nav className="mobile-nav" aria-label="Mobile navigation"><SheetClose asChild><a href={sitePath("/")}>Home</a></SheetClose><SheetClose asChild><a href={sitePath("/#about")}>{links[0][1]}</a></SheetClose><Accordion type="single" collapsible className="mobile-service-menu"><AccordionItem value="services"><AccordionTrigger>Our Services</AccordionTrigger><AccordionContent><SheetClose asChild><a href={sitePath("/services")}>View all services</a></SheetClose>{services.map(service => <SheetClose key={service.slug} asChild><a href={sitePath(`/services/${service.slug}`)}>{serviceLabel(service)}</a></SheetClose>)}</AccordionContent></AccordionItem></Accordion>{links.slice(1).map(([href, label]) => <SheetClose asChild key={href}><a href={sitePath(href)}>{label}</a></SheetClose>)}</nav><a className="mobile-contact" href={quoteUrl} target="_blank" rel="noreferrer"><MessageCircle /> +86 186 2024 4613</a></SheetContent></Sheet>
+      <Sheet><SheetTrigger asChild><Button className="menu-button" variant="ghost" size="icon" aria-label="Open navigation"><Menu /></Button></SheetTrigger><SheetContent className="mobile-sheet"><SheetHeader><SheetTitle>TengYoda Logistics</SheetTitle><SheetDescription>Global sea freight booking and China-side support</SheetDescription></SheetHeader><nav className="mobile-nav" aria-label="Mobile navigation"><SheetClose asChild><a href={sitePath("/")}>Home</a></SheetClose><SheetClose asChild><a href={sitePath("/about")}>{links[0][1]}</a></SheetClose><Accordion type="single" collapsible className="mobile-service-menu"><AccordionItem value="services"><AccordionTrigger>Our Services</AccordionTrigger><AccordionContent><SheetClose asChild><a href={sitePath("/services")}>View all services</a></SheetClose>{services.map(service => <SheetClose key={service.slug} asChild><a href={sitePath(`/services/${service.slug}`)}>{serviceLabel(service)}</a></SheetClose>)}</AccordionContent></AccordionItem></Accordion>{links.slice(1).map(([href, label]) => <SheetClose asChild key={href}><a href={sitePath(href)}>{label}</a></SheetClose>)}</nav><a className="mobile-contact" href={quoteUrl} target="_blank" rel="noreferrer"><MessageCircle /> +86 186 2024 4613</a></SheetContent></Sheet>
     </div></header>
   </>;
 }

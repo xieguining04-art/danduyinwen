@@ -772,6 +772,691 @@ export const markdownPosts: BlogPost[] = [
     }
   },
   {
+    "slug": "australia-import-container-release-bill-of-lading-guide",
+    "publishedAt": "2026-09-09",
+    "author": "TengYoda Logistics",
+    "image": {
+      "src": "/article-images/australia-destination-charges.webp",
+      "alt": "Container terminal and shipping-line release process for an Australian import shipment"
+    },
+    "updatedAt": "2026-09-09",
+    "content": {
+      "category": "AUSTRALIA IMPORT GUIDE",
+      "title": "Australia Import Container Release: Bills of Lading, Shipping Line Charges and Empty Returns",
+      "summary": "A first-time importer's guide to container numbers, bills of lading, carrier invoices, customs clearance, cargo release, free time and empty returns in Australia.",
+      "introduction": "A first-time Australian importer may receive a booking number, bill of lading number, container number, arrival notice, freight invoice and destination-charge invoice for the same shipment. These references have different purposes, and no single status means the container is immediately ready for collection. Shipping lines also use different billing and release systems. One carrier may email an invoice automatically. Another may require the consignee to register on its website, link the company account and download the invoice. A third may require an email to the local office or agent. The amount can also vary by carrier, port, container type, route and contract. The difference between two carriers' ordinary local charges may be modest, but a delayed payment, missing release instruction or late empty return can create a much larger cost. This guide explains the practical sequence from freight payment and final transport document to Australian customs clearance, carrier release, terminal collection and empty-container return.",
+      "sections": [
+        {
+          "id": "1-why-shipping-line-invoices-are-not-all-the-same",
+          "heading": "1. Why Shipping-Line Invoices Are Not All the Same",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Each shipping line publishes and administers its own local charges and operating procedures. The invoice description, timing and payment method may therefore differ even when two containers arrive at the same Australian port."
+            },
+            {
+              "type": "paragraph",
+              "text": "Common carrier or destination items can include:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Documentation or import service fees",
+                "Delivery order or cargo-release fees",
+                "Terminal-related charges collected by or through the carrier",
+                "Equipment, seal or administration charges",
+                "Demurrage, detention or combined equipment charges",
+                "Special handling or amendment fees",
+                "Applicable GST"
+              ],
+              "ordered": false
+            },
+            {
+              "type": "paragraph",
+              "text": "Some terminal, depot, customs, biosecurity, trucking or warehousing costs may be billed separately by other parties. For this reason, “port charges” is often too broad a description for invoice checking."
+            },
+            {
+              "type": "paragraph",
+              "text": "Ask the issuer to identify:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "The bill of lading number",
+                "The container number or containers covered",
+                "The charge period and applicable tariff",
+                "Whether GST is included",
+                "The payment reference required for allocation",
+                "The action that will be released after payment"
+              ],
+              "ordered": false
+            },
+            {
+              "type": "paragraph",
+              "text": "The cheapest-looking invoice is not automatically the lowest total destination cost. The important comparison is the complete release and delivery scope."
+            }
+          ]
+        },
+        {
+          "id": "2-container-number-and-bill-of-lading-number-have-different-jobs",
+          "heading": "2. Container Number and Bill of Lading Number Have Different Jobs",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "New importers often send the wrong reference because both numbers appear throughout the shipment."
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Reference",
+                "What it identifies",
+                "Where it is commonly used"
+              ],
+              "rows": [
+                [
+                  "Container number",
+                  "One physical shipping container",
+                  "Terminal pickup, tracking, equipment condition, depot return and detention enquiries"
+                ],
+                [
+                  "Bill of lading number",
+                  "The carrier's transport document and shipment record",
+                  "Freight payment, arrival notice, document release, customs records and cargo release"
+                ],
+                [
+                  "Booking number",
+                  "The original carrier booking instruction",
+                  "Origin operations, equipment collection, loading and pre-departure communication"
+                ],
+                [
+                  "Seal number",
+                  "The seal fitted to a loaded container",
+                  "Security checks, transport documents and delivery verification"
+                ]
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "A bill of lading can cover one container or several containers. Each container still has its own equipment number and may have its own pickup, damage and return record."
+            },
+            {
+              "type": "subheading",
+              "text": "Why the container number matters"
+            },
+            {
+              "type": "paragraph",
+              "text": "The container number follows the physical equipment. The truck driver, terminal and empty-return depot use it to identify the exact unit. If a shipment has two containers, one can be collected or returned at a different time from the other."
+            },
+            {
+              "type": "subheading",
+              "text": "Why the bill of lading matters"
+            },
+            {
+              "type": "paragraph",
+              "text": "The bill of lading connects the cargo, carrier, shipper, consignee, route and freight terms. Depending on its form, it may also control who is entitled to request delivery. The bill number is therefore the main reference for carrier invoices and document-release questions."
+            },
+            {
+              "type": "paragraph",
+              "text": "For a broader document checklist, see [Documents Required for Shipping from China](/blog/documents-required-shipping-from-china/)."
+            }
+          ]
+        },
+        {
+          "id": "3-what-a-bill-of-lading-does",
+          "heading": "3. What a Bill of Lading Does",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "A bill of lading commonly performs three important functions:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "It records the carrier's receipt of the cargo for carriage.",
+                "It provides evidence of the contract of carriage and its terms.",
+                "In negotiable form, it can function as a document of title."
+              ],
+              "ordered": true
+            },
+            {
+              "type": "paragraph",
+              "text": "However, importers should not use “formal bill of lading” as a universal term. The release method may be:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Original negotiable bill of lading:** an appropriately endorsed original may need to be surrendered under the carrier's terms.",
+                "**Sea waybill:** generally non-negotiable and often allows release to the named consignee after identity, payment and other requirements are satisfied.",
+                "**Telex or electronic release:** the origin office confirms that the required surrender or release instruction has been completed, subject to carrier procedures."
+              ],
+              "ordered": false
+            },
+            {
+              "type": "paragraph",
+              "text": "The transport document is important, but it is not the only condition for collecting a container. Outstanding freight, local charges, customs or biosecurity holds, terminal availability and delivery arrangements may still need to be completed."
+            }
+          ]
+        },
+        {
+          "id": "4-why-the-importer-has-paid-but-the-final-bill-of-lading-is-still-not-available",
+          "heading": "4. Why the Importer Has Paid but the Final Bill of Lading Is Still Not Available",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "This is a common source of confusion in international shipping."
+            },
+            {
+              "type": "paragraph",
+              "text": "The importer may have sent money, but several separate events still have to occur:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "The importer's bank sends the international payment.",
+                "Intermediary and receiving banks process the transfer.",
+                "The freight forwarder receives cleared funds and identifies the correct shipment.",
+                "The forwarder reconciles the payment against its invoice.",
+                "The forwarder pays the contractual carrier or consolidator where payment is still outstanding.",
+                "The carrier receives and allocates the funds.",
+                "Documentation, freight and release conditions are checked.",
+                "The final bill, sea waybill or release instruction is issued according to the shipment arrangement."
+              ],
+              "ordered": true
+            },
+            {
+              "type": "paragraph",
+              "text": "Sending a bank remittance slip proves that payment was instructed; it does not always prove that cleared funds have reached the final recipient or been allocated to the correct bill."
+            },
+            {
+              "type": "paragraph",
+              "text": "International transfers can be delayed by weekends, bank processing, intermediary banks, compliance reviews, an incorrect payment reference or short payment caused by bank charges."
+            },
+            {
+              "type": "paragraph",
+              "text": "To reduce delay, send the forwarder:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Payment date and amount",
+                "Currency",
+                "Invoice number",
+                "Booking or bill of lading reference",
+                "Bank remittance confirmation",
+                "UETR or bank trace reference where available"
+              ],
+              "ordered": false
+            },
+            {
+              "type": "paragraph",
+              "text": "Then ask for confirmation that the funds have been **received and allocated**, not only that the payment instruction was sent."
+            }
+          ]
+        },
+        {
+          "id": "5-payment-to-a-freight-forwarder-and-payment-to-the-carrier-are-different-events",
+          "heading": "5. Payment to a Freight Forwarder and Payment to the Carrier Are Different Events",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Where a freight forwarder is the contracting party with the shipping line, the importer may pay the forwarder rather than the carrier directly. The forwarder then completes its own settlement with the carrier or consolidator."
+            },
+            {
+              "type": "paragraph",
+              "text": "Carrier terms can allow the carrier to hold freight documents, cargo release or a delivery order until outstanding freight and charges are received. For example, MSC's published bill of lading terms state that the applicable original bill and outstanding freight and charges may be required in exchange for the goods or delivery order."
+            },
+            {
+              "type": "paragraph",
+              "text": "This does not mean every shipment needs a paper original. It means the agreed document type and all carrier release conditions must be identified early."
+            },
+            {
+              "type": "paragraph",
+              "text": "Before departure, confirm in writing:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Who invoices the international freight",
+                "Whether freight is prepaid or collect",
+                "Who is responsible for paying the carrier",
+                "Which bill of lading type will be used",
+                "What must happen before the carrier issues the release instruction",
+                "Which email addresses should receive invoices and arrival notices"
+              ],
+              "ordered": false
+            }
+          ]
+        },
+        {
+          "id": "6-when-does-the-shipping-line-issue-the-destination-charge-invoice",
+          "heading": "6. When Does the Shipping Line Issue the Destination-Charge Invoice?",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "There is no universal timing rule."
+            },
+            {
+              "type": "paragraph",
+              "text": "Depending on the carrier, port and shipment, the destination invoice may be available before arrival, around the arrival-notice stage or after cargo discharge information is processed. The invoice may be:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Automatically emailed to the consignee or notify party",
+                "Downloaded from the carrier's customer portal",
+                "Requested from the carrier's local office",
+                "Sent to the appointed customs broker or freight representative",
+                "Issued in more than one part as additional charges arise"
+              ],
+              "ordered": false
+            },
+            {
+              "type": "paragraph",
+              "text": "The bill of lading number is normally the most useful reference when requesting the invoice. The consignee may also need to provide company details, customer-account information or proof of authority."
+            },
+            {
+              "type": "paragraph",
+              "text": "Do not wait until the last free day to ask where the invoice is. Several days before arrival, confirm:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Which carrier or local agent will invoice the destination charges",
+                "Whether portal registration is required",
+                "Which email address is recorded against the shipment",
+                "Whether the broker or importer is responsible for requesting the invoice",
+                "Which payment methods are accepted",
+                "How long payment allocation normally takes"
+              ],
+              "ordered": false
+            },
+            {
+              "type": "paragraph",
+              "text": "The previous guide on [destination shipping charges](/blog/avoid-destination-shipping-charges/) explains the other cost items importers should check."
+            }
+          ]
+        },
+        {
+          "id": "7-does-paying-the-destination-invoice-automatically-release-the-container",
+          "heading": "7. Does Paying the Destination Invoice Automatically Release the Container?",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Not necessarily."
+            },
+            {
+              "type": "paragraph",
+              "text": "Container collection normally requires several separate statuses to align:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "The vessel has discharged the container and the terminal shows it as available",
+                "Australian customs clearance is complete",
+                "Biosecurity clearance or any directed action is complete",
+                "The carrier's freight and destination invoices are paid and allocated",
+                "The bill of lading or electronic document-release condition is satisfied",
+                "The carrier or agent has issued the required cargo release or delivery authority",
+                "The terminal appointment and transport booking are confirmed"
+              ],
+              "ordered": false
+            },
+            {
+              "type": "paragraph",
+              "text": "The practical question is not simply, “Has the invoice been paid?” It is:"
+            },
+            {
+              "type": "quote",
+              "text": "Which release condition is still outstanding before the truck can collect this container?"
+            }
+          ]
+        },
+        {
+          "id": "8-when-should-the-importer-appoint-an-australian-customs-broker",
+          "heading": "8. When Should the Importer Appoint an Australian Customs Broker?",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "The importer should appoint the broker before the vessel arrives—ideally before the cargo leaves China when the goods are unfamiliar, regulated or high value."
+            },
+            {
+              "type": "paragraph",
+              "text": "Early appointment gives the broker time to review:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Importer identity and authorisation",
+                "Commercial invoice and packing list",
+                "Tariff classification and customs value",
+                "Bill of lading or cargo-report details",
+                "Permits, concessions or origin documents",
+                "Biosecurity information and packing declarations",
+                "Product descriptions, materials and intended use"
+              ],
+              "ordered": false
+            },
+            {
+              "type": "paragraph",
+              "text": "The Australian Border Force encourages first-time or infrequent importers to use a licensed customs broker. For consignments over AUD 1,000 being entered for home consumption, an Import Declaration is generally required, and applicable duties, taxes and charges must be paid before customs release."
+            },
+            {
+              "type": "paragraph",
+              "text": "An import declaration can be prepared or lodged before arrival when sufficient and accurate transport and commercial information is available. However, the broker cannot responsibly complete the entry using guesses or incomplete supplier descriptions."
+            },
+            {
+              "type": "subheading",
+              "text": "Recommended timing"
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Before booking:** ask the broker whether the goods have obvious import, tariff or permit concerns.",
+                "**After departure:** send the final commercial documents and transport details.",
+                "**Several days before arrival:** confirm declaration, customs and biosecurity status and respond to outstanding questions.",
+                "**After clearance:** continue monitoring carrier release and terminal availability; customs clearance alone does not book the truck."
+              ],
+              "ordered": false
+            },
+            {
+              "type": "paragraph",
+              "text": "For the wider sequence, read [What Happens After China Customs Release?](/blog/australia-import-process-after-china-customs-release/)."
+            }
+          ]
+        },
+        {
+          "id": "9-how-many-days-does-the-importer-have-to-return-the-empty-container",
+          "heading": "9. How Many Days Does the Importer Have to Return the Empty Container?",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "There is no single Australian rule that gives every importer the same number of days."
+            },
+            {
+              "type": "paragraph",
+              "text": "The free-time calculation depends on:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Shipping line",
+                "Contract or spot-booking terms",
+                "Port and terminal",
+                "Container size and type",
+                "Dry, reefer or special equipment",
+                "Whether demurrage and detention are separate or combined",
+                "The event from which time starts",
+                "Calendar-day or working-day rules",
+                "Public-holiday treatment",
+                "Any negotiated free time"
+              ],
+              "ordered": false
+            },
+            {
+              "type": "paragraph",
+              "text": "The empty-return clock is also different from terminal storage in many tariffs. Importers must obtain the booking-specific free-time confirmation and the nominated empty depot."
+            },
+            {
+              "type": "subheading",
+              "text": "Current published examples—not a quotation"
+            },
+            {
+              "type": "paragraph",
+              "text": "As an illustration of how tariffs differ, Maersk's Australia import page currently publishes combined detention and demurrage for standard non-spot imports with days 1–8 free. It lists dry-container charges of AUD 100 per day for a 20-foot container and AUD 200 per day for a 40-foot container on days 9–20, rising to AUD 150 and AUD 300 respectively from day 21. The page states that these figures exclude GST and that separate spot terms may apply."
+            },
+            {
+              "type": "paragraph",
+              "text": "ONE Australia's tariff effective 1 April 2026 publishes a different structure: three days of import demurrage free time for wharf storage and eight days of detention free time for container rental, with separate tariff conditions and charges."
+            },
+            {
+              "type": "paragraph",
+              "text": "These examples must not be applied automatically to another carrier or booking. Always check the tariff and free-time notice connected to the actual bill of lading."
+            }
+          ]
+        },
+        {
+          "id": "10-how-to-calculate-a-late-empty-return-charge",
+          "heading": "10. How to Calculate a Late Empty-Return Charge",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "A simplified calculation is:"
+            },
+            {
+              "type": "paragraph",
+              "text": "**Chargeable Days × Applicable Daily Rate = Estimated Detention Charge**"
+            },
+            {
+              "type": "paragraph",
+              "text": "But the rate may increase in stages."
+            },
+            {
+              "type": "paragraph",
+              "text": "For example, if a hypothetical tariff provides eight free days, AUD 200 per day for the next twelve days and AUD 300 per day afterward, a 40-foot dry container returned on day 23 could involve:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Days 1–8: free",
+                "Days 9–20: 12 × AUD 200 = AUD 2,400",
+                "Days 21–23: 3 × AUD 300 = AUD 900",
+                "Estimated equipment charge: AUD 3,300, before any applicable GST or separate costs"
+              ],
+              "ordered": false
+            },
+            {
+              "type": "paragraph",
+              "text": "This is only an illustration. The real start date, return event, tariff slabs, tax and exceptions must be confirmed with the carrier."
+            }
+          ]
+        },
+        {
+          "id": "11-actions-to-take-immediately-after-container-pickup",
+          "heading": "11. Actions to Take Immediately After Container Pickup",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "The responsibility does not end when the truck leaves the terminal."
+            },
+            {
+              "type": "paragraph",
+              "text": "The importer or transport provider should:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Confirm the container number and seal before leaving the terminal.",
+                "Record visible container damage where appropriate.",
+                "Deliver within the receiver's confirmed opening and unloading window.",
+                "Unpack the container safely and without unnecessary delay.",
+                "Remove cargo, packing material and securing materials as required.",
+                "Check the carrier's nominated empty-return depot before dispatch.",
+                "Return the correct empty container within free time.",
+                "Retain the empty-return receipt or electronic interchange record."
+              ],
+              "ordered": true
+            },
+            {
+              "type": "paragraph",
+              "text": "Depot directions can change. A truck should not assume that the empty unit returns to the same place from which the loaded container was collected."
+            }
+          ]
+        },
+        {
+          "id": "12-a-practical-release-checklist-for-first-time-importers",
+          "heading": "12. A Practical Release Checklist for First-Time Importers",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "subheading",
+              "text": "Before vessel departure"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Confirm the bill of lading type and release method",
+                "Check consignee and notify-party contact details",
+                "Confirm who pays international freight",
+                "Appoint the Australian customs broker",
+                "Send permits and product documents early"
+              ],
+              "ordered": false
+            },
+            {
+              "type": "subheading",
+              "text": "During ocean transit"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Obtain and check the final transport document",
+                "Send invoice, packing list and bill details to the broker",
+                "Register for the shipping-line portal if required",
+                "Confirm who receives the arrival notice and destination invoice",
+                "Check the published and booking-specific free time"
+              ],
+              "ordered": false
+            },
+            {
+              "type": "subheading",
+              "text": "Before Australian arrival"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Confirm customs and biosecurity status",
+                "Obtain the destination-charge invoice",
+                "Use the correct bill number and payment reference",
+                "Allow time for bank funds to clear and be allocated",
+                "Confirm document or electronic cargo release"
+              ],
+              "ordered": false
+            },
+            {
+              "type": "subheading",
+              "text": "Before terminal collection"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Confirm the container is discharged and available",
+                "Confirm customs, biosecurity and carrier releases",
+                "Check terminal free time and last-free-day information",
+                "Book the truck and delivery appointment",
+                "Confirm unloading equipment and empty-return depot"
+              ],
+              "ordered": false
+            },
+            {
+              "type": "subheading",
+              "text": "After collection"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Unpack promptly",
+                "Monitor the container-return deadline",
+                "Reconfirm the nominated depot",
+                "Keep the return receipt",
+                "Query incorrect detention charges using the bill and container numbers"
+              ],
+              "ordered": false
+            }
+          ]
+        },
+        {
+          "id": "13-frequently-asked-questions",
+          "heading": "13. Frequently Asked Questions",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "subheading",
+              "text": "I paid the freight forwarder. Why has the shipping line not released the bill?"
+            },
+            {
+              "type": "paragraph",
+              "text": "The international payment may still be clearing, awaiting allocation or waiting for the forwarder's settlement with the carrier. Documentation or release instructions may also remain incomplete. Ask whether cleared funds were received, allocated and paid through to the relevant carrier account."
+            },
+            {
+              "type": "subheading",
+              "text": "Can I collect the container with the container number only?"
+            },
+            {
+              "type": "paragraph",
+              "text": "No. The number identifies the physical equipment, but customs, biosecurity, carrier document release, payment, terminal availability and transport arrangements may all be required."
+            },
+            {
+              "type": "subheading",
+              "text": "Must I have a paper original bill of lading?"
+            },
+            {
+              "type": "paragraph",
+              "text": "Not always. The shipment may use an original negotiable bill, sea waybill or electronic/telex release. Confirm the agreed document type before departure."
+            },
+            {
+              "type": "subheading",
+              "text": "Will every shipping line email the Australian local-charge invoice?"
+            },
+            {
+              "type": "paragraph",
+              "text": "No. Some lines use portals, some email invoices and others require contact with the local office or agent. Confirm the process before arrival."
+            },
+            {
+              "type": "subheading",
+              "text": "Does customs clearance mean the container is ready for pickup?"
+            },
+            {
+              "type": "paragraph",
+              "text": "Not by itself. Carrier release, biosecurity status, payment, terminal availability and transport booking may still be outstanding."
+            },
+            {
+              "type": "subheading",
+              "text": "Is empty-container free time always eight days?"
+            },
+            {
+              "type": "paragraph",
+              "text": "No. Eight days appears in some current published tariffs, but the actual allowance depends on the carrier, booking, equipment and applicable terms."
+            }
+          ]
+        },
+        {
+          "id": "14-control-the-shipment-by-tracking-responsibilities-not-just-status-words",
+          "heading": "14. Control the Shipment by Tracking Responsibilities, Not Just Status Words",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "The safest import process assigns one person to every action: receiving carrier invoices, checking the bill of lading, authorising the customs broker, paying duties and local charges, booking delivery and returning the empty container."
+            },
+            {
+              "type": "paragraph",
+              "text": "A shipment can be “customs cleared” but still unavailable. An invoice can be “paid” but not allocated. A container can be “collected” but already approaching its detention deadline."
+            },
+            {
+              "type": "paragraph",
+              "text": "TengYoda coordinates China-side pickup, loading, export documentation and international freight communication. For an Australia-bound shipment, provide the product details, supplier city, packed dimensions, gross weight, destination port, consignee information and appointed customs-broker contact so the handovers can be planned before the vessel arrives."
+            },
+            {
+              "type": "paragraph",
+              "text": "Official references include the Australian Border Force [Import Declarations guidance](https://www.abf.gov.au/imports/Pages/How-to-import/Import-declarations.aspx), the carrier's applicable bill of lading and local tariff, [Maersk Australia import information](https://www.maersk.com/local-information/asia-pacific/australia/import), and [ONE Australia local charges and tariffs](https://www.one-line.com/local-information/au/local-charges). Carrier tariffs and procedures can change, so confirm the terms applying to the actual booking."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
     "slug": "australia-import-process-after-china-customs-release",
     "publishedAt": "2026-09-09",
     "author": "TengYoda Logistics",
@@ -3160,6 +3845,803 @@ export const markdownPosts: BlogPost[] = [
             {
               "type": "paragraph",
               "text": "[Discuss your supplier consolidation plan](https://wa.me/8618620244613) or review our [cargo consolidation service](/services/cargo-consolidation)."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "customs-hold-and-release-process",
+    "publishedAt": "2026-09-10",
+    "author": "TengYoda Logistics",
+    "image": {
+      "src": "/article-images/customs-hold-release-process.webp",
+      "alt": "Shipping container under customs inspection before release and delivery from port"
+    },
+    "updatedAt": "2026-09-10",
+    "content": {
+      "category": "CUSTOMS & IMPORT",
+      "title": "Customs Not Releasing Your Cargo? What to Do Before and After Customs Release",
+      "summary": "Cargo stuck in customs? Learn why customs may hold a shipment, what importers should do during a customs delay, and what happens after customs release, including carrier release, EDO, pickup, delivery and empty container return.",
+      "introduction": "For many importers, one of the most stressful moments in international shipping is seeing that the container has already arrived at the destination port, but customs has not released the cargo. The vessel has arrived. The container has been discharged. The supplier may already have been paid. Ocean freight may already have been settled. But the cargo still cannot leave the port. So what exactly is happening? And once customs finally releases the shipment, what should the importer do next? This guide explains the process step by step, especially for importers shipping goods from China.",
+      "sections": [
+        {
+          "id": "vessel-arrival-does-not-mean-the-cargo-can-be-collected",
+          "heading": "Vessel Arrival Does Not Mean the Cargo Can Be Collected",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "This is one of the most common misunderstandings among first-time importers."
+            },
+            {
+              "type": "paragraph",
+              "text": "When a vessel arrives at the destination port, the container normally goes through several separate processes before it can actually be picked up."
+            },
+            {
+              "type": "paragraph",
+              "text": "A typical sequence may look like this:"
+            },
+            {
+              "type": "paragraph",
+              "text": "**Vessel arrives → Container discharged → Customs clearance → Customs release → Carrier release → EDO / delivery order → Truck pickup → Delivery → Empty container return**"
+            },
+            {
+              "type": "paragraph",
+              "text": "Each step is different."
+            },
+            {
+              "type": "paragraph",
+              "text": "A container can physically be sitting at the port while still being unavailable for collection. That is completely possible."
+            }
+          ]
+        },
+        {
+          "id": "why-is-customs-not-releasing-the-cargo",
+          "heading": "Why Is Customs Not Releasing the Cargo?",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "There are many possible reasons."
+            },
+            {
+              "type": "paragraph",
+              "text": "A customs hold does not automatically mean that something is seriously wrong. Sometimes it is simply part of the normal inspection process."
+            },
+            {
+              "type": "subheading",
+              "text": "1. Customs Documents Are Incomplete"
+            },
+            {
+              "type": "paragraph",
+              "text": "Customs may require documents such as:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Commercial Invoice",
+                "Packing List",
+                "Bill of Lading",
+                "Certificate of Origin",
+                "Import permit",
+                "Product certificates",
+                "Customs declaration",
+                "Other commodity-specific documents"
+              ],
+              "ordered": false
+            },
+            {
+              "type": "paragraph",
+              "text": "If information is missing or inconsistent, clearance may be delayed."
+            },
+            {
+              "type": "paragraph",
+              "text": "For importers, it is important to make sure the shipping documents match the actual cargo description, quantity, value and consignee information."
+            }
+          ]
+        },
+        {
+          "id": "2-the-hs-code-needs-verification",
+          "heading": "2. The HS Code Needs Verification",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "The HS Code determines how the product is classified for customs purposes."
+            },
+            {
+              "type": "paragraph",
+              "text": "If customs believes that the declared HS Code does not accurately describe the goods, they may request additional information."
+            },
+            {
+              "type": "paragraph",
+              "text": "This can affect:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Import duty",
+                "GST or VAT",
+                "Product restrictions",
+                "Import permits",
+                "Inspection requirements"
+              ],
+              "ordered": false
+            },
+            {
+              "type": "paragraph",
+              "text": "Importers should not select an HS Code simply because it appears to have a lower duty rate. The classification should match the actual product."
+            }
+          ]
+        },
+        {
+          "id": "3-customs-wants-to-verify-the-declared-value",
+          "heading": "3. Customs Wants to Verify the Declared Value",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Customs may question whether the declared commercial value is reasonable."
+            },
+            {
+              "type": "paragraph",
+              "text": "They may request supporting documents such as:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Supplier invoice",
+                "Purchase contract",
+                "Payment records",
+                "Product quotation",
+                "Order confirmation"
+              ],
+              "ordered": false
+            },
+            {
+              "type": "paragraph",
+              "text": "Trying to artificially reduce the declared value can create much bigger problems than the tax saved."
+            }
+          ]
+        },
+        {
+          "id": "4-physical-inspection-or-customs-scanning",
+          "heading": "4. Physical Inspection or Customs Scanning",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Sometimes customs selects a container for:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "X-ray inspection",
+                "Container scanning",
+                "Physical inspection",
+                "Cargo examination"
+              ],
+              "ordered": false
+            },
+            {
+              "type": "paragraph",
+              "text": "This does not necessarily mean the importer has done anything wrong."
+            },
+            {
+              "type": "paragraph",
+              "text": "Some inspections are random, while others may be triggered by the product, importer history, declaration information or customs risk assessment."
+            }
+          ]
+        },
+        {
+          "id": "5-biosecurity-or-quarantine-inspection",
+          "heading": "5. Biosecurity or Quarantine Inspection",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "In countries with strict biosecurity requirements, customs clearance and biosecurity clearance may be separate procedures."
+            },
+            {
+              "type": "paragraph",
+              "text": "Goods containing or packed with materials such as:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Solid wood",
+                "Bamboo",
+                "Plant products",
+                "Food",
+                "Agricultural products",
+                "Used machinery",
+                "Soil-contaminated equipment"
+              ],
+              "ordered": false
+            },
+            {
+              "type": "paragraph",
+              "text": "may require additional inspection, treatment or supporting documentation."
+            },
+            {
+              "type": "paragraph",
+              "text": "For example, solid wood packaging may need to comply with applicable treatment and marking requirements before shipment."
+            }
+          ]
+        },
+        {
+          "id": "what-should-you-do-when-customs-has-not-released-the-cargo",
+          "heading": "What Should You Do When Customs Has Not Released the Cargo?",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "The worst thing an importer can do is simply wait without knowing what is happening."
+            },
+            {
+              "type": "paragraph",
+              "text": "The first step is to identify the exact reason for the hold."
+            },
+            {
+              "type": "paragraph",
+              "text": "Your customs broker or freight forwarder should confirm whether the cargo is waiting for:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Document review",
+                "Customs inspection",
+                "Scanning",
+                "Tax payment",
+                "Biosecurity or quarantine clearance",
+                "Import permit approval",
+                "Another customs decision"
+              ],
+              "ordered": false
+            },
+            {
+              "type": "paragraph",
+              "text": "“Customs has not released the cargo” is not enough information."
+            },
+            {
+              "type": "paragraph",
+              "text": "You need to know **why** the cargo has not been released and what action is required next."
+            }
+          ]
+        },
+        {
+          "id": "questions-to-ask-your-customs-broker",
+          "heading": "Questions to Ask Your Customs Broker",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "If your shipment is delayed, ask for specific answers:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Has the customs declaration been submitted?",
+                "Has customs requested additional documents?",
+                "Has the shipment been selected for inspection?",
+                "Is the container waiting for scanning?",
+                "Are duties or taxes outstanding?",
+                "Has customs issued any written notice?",
+                "Is biosecurity or quarantine clearance still pending?",
+                "Is the container physically available at the terminal?",
+                "Are storage charges already accumulating?",
+                "What is the expected next operational step?"
+              ],
+              "ordered": false
+            },
+            {
+              "type": "paragraph",
+              "text": "A professional customs broker should be able to explain which stage the shipment is currently at."
+            }
+          ]
+        },
+        {
+          "id": "pay-attention-to-port-storage-demurrage-and-detention",
+          "heading": "Pay Attention to Port Storage, Demurrage and Detention",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "This is where delays can become expensive."
+            },
+            {
+              "type": "paragraph",
+              "text": "Even if the customs issue itself is relatively small, the container may continue accumulating charges while waiting."
+            },
+            {
+              "type": "paragraph",
+              "text": "Depending on the port, carrier and terminal, these may include:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Port storage",
+                "Demurrage",
+                "Detention",
+                "Container hire",
+                "Examination charges",
+                "Lift-on / lift-off charges",
+                "Customs inspection charges",
+                "Truck waiting charges"
+              ],
+              "ordered": false
+            },
+            {
+              "type": "paragraph",
+              "text": "Importers should therefore not focus only on “when customs will release the cargo.”"
+            },
+            {
+              "type": "paragraph",
+              "text": "They should also monitor the **free time**."
+            },
+            {
+              "type": "paragraph",
+              "text": "Once the free time expires, costs can increase quickly."
+            }
+          ]
+        },
+        {
+          "id": "what-happens-once-customs-releases-the-cargo",
+          "heading": "What Happens Once Customs Releases the Cargo?",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Customs release is very good news."
+            },
+            {
+              "type": "paragraph",
+              "text": "But it does not always mean the truck can immediately collect the container."
+            },
+            {
+              "type": "paragraph",
+              "text": "There may still be several steps remaining."
+            },
+            {
+              "type": "paragraph",
+              "text": "The next stage is normally to confirm whether the **shipping line has also released the cargo**."
+            }
+          ]
+        },
+        {
+          "id": "customs-release-and-carrier-release-are-different",
+          "heading": "Customs Release and Carrier Release Are Different",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "This distinction is extremely important."
+            },
+            {
+              "type": "paragraph",
+              "text": "There are usually two separate release processes."
+            },
+            {
+              "type": "subheading",
+              "text": "Customs Release"
+            },
+            {
+              "type": "paragraph",
+              "text": "This means customs has approved the import clearance."
+            },
+            {
+              "type": "subheading",
+              "text": "Carrier Release"
+            },
+            {
+              "type": "paragraph",
+              "text": "This means the shipping line has authorized the cargo or container to be delivered."
+            },
+            {
+              "type": "paragraph",
+              "text": "The shipping line may still require payment of:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Destination charges",
+                "Documentation charges",
+                "Container deposit",
+                "Local carrier charges",
+                "Other outstanding fees"
+              ],
+              "ordered": false
+            },
+            {
+              "type": "paragraph",
+              "text": "before issuing the delivery authorization."
+            },
+            {
+              "type": "paragraph",
+              "text": "So even when customs says “released,” the container may still not be available for pickup."
+            }
+          ]
+        },
+        {
+          "id": "edo-or-delivery-order",
+          "heading": "EDO or Delivery Order",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Depending on the shipping line and destination country, the importer may need an **EDO — Electronic Delivery Order** or another form of delivery order."
+            },
+            {
+              "type": "paragraph",
+              "text": "This document confirms that the shipping line authorizes the container to be released."
+            },
+            {
+              "type": "paragraph",
+              "text": "Without the required release authorization, the truck may not be able to collect the container from the terminal."
+            },
+            {
+              "type": "paragraph",
+              "text": "For first-time importers, this is often confusing."
+            },
+            {
+              "type": "paragraph",
+              "text": "They may think:"
+            },
+            {
+              "type": "quote",
+              "text": "“Customs released my cargo. Why can’t I pick it up?”"
+            },
+            {
+              "type": "paragraph",
+              "text": "The answer is often that customs clearance is complete, but the carrier release process is not yet complete."
+            }
+          ]
+        },
+        {
+          "id": "arrange-the-truck-quickly-after-release",
+          "heading": "Arrange the Truck Quickly After Release",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Once both customs and carrier release are completed, the next step should be arranged quickly."
+            },
+            {
+              "type": "paragraph",
+              "text": "The freight forwarder or local delivery company should normally:"
+            },
+            {
+              "type": "paragraph",
+              "text": "**Book the truck → Reserve terminal pickup → Collect the container → Deliver to the warehouse or consignee**"
+            },
+            {
+              "type": "paragraph",
+              "text": "If storage charges are already running, unnecessary delays should be avoided."
+            },
+            {
+              "type": "paragraph",
+              "text": "Where practical, it is better to prepare the delivery arrangement before final customs release so that the truck can be booked quickly once the cargo becomes available."
+            }
+          ]
+        },
+        {
+          "id": "what-if-customs-releases-the-cargo-late",
+          "heading": "What If Customs Releases the Cargo Late?",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Suppose the container arrived several days ago, but customs inspection delayed the release."
+            },
+            {
+              "type": "paragraph",
+              "text": "Once customs finally releases the cargo, part of the free container time may already have been used."
+            },
+            {
+              "type": "paragraph",
+              "text": "At this stage, the importer should immediately confirm:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Remaining free days",
+                "Last free day",
+                "Container detention conditions",
+                "Empty return deadline",
+                "Empty return depot",
+                "Whether an empty-return appointment is required"
+              ],
+              "ordered": false
+            },
+            {
+              "type": "paragraph",
+              "text": "Do not assume the free time starts again after customs release."
+            },
+            {
+              "type": "paragraph",
+              "text": "In many cases, it does not."
+            }
+          ]
+        },
+        {
+          "id": "after-delivery-do-not-forget-to-return-the-empty-container",
+          "heading": "After Delivery, Do Not Forget to Return the Empty Container",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "For FCL shipments, the job is not finished when the container arrives at your warehouse."
+            },
+            {
+              "type": "paragraph",
+              "text": "After unloading, the empty container normally needs to be returned to the shipping line’s nominated depot."
+            },
+            {
+              "type": "paragraph",
+              "text": "You should confirm:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Where to return the empty container",
+                "Deadline for empty return",
+                "Whether an appointment is required",
+                "Whether the depot is accepting the container",
+                "Whether any container damage occurred"
+              ],
+              "ordered": false
+            },
+            {
+              "type": "paragraph",
+              "text": "If the empty container is returned late, detention or container hire charges may continue accumulating."
+            }
+          ]
+        },
+        {
+          "id": "a-practical-example",
+          "heading": "A Practical Example",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Imagine a container imported from China."
+            },
+            {
+              "type": "paragraph",
+              "text": "The vessel arrives on Monday."
+            },
+            {
+              "type": "paragraph",
+              "text": "The container is discharged on Tuesday."
+            },
+            {
+              "type": "paragraph",
+              "text": "Customs selects the container for scanning."
+            },
+            {
+              "type": "paragraph",
+              "text": "Scanning takes several days."
+            },
+            {
+              "type": "paragraph",
+              "text": "Customs finally releases the shipment on Friday."
+            },
+            {
+              "type": "paragraph",
+              "text": "What should happen next?"
+            },
+            {
+              "type": "paragraph",
+              "text": "The correct process is not simply:"
+            },
+            {
+              "type": "paragraph",
+              "text": "**“Customs released it, so everything is finished.”**"
+            },
+            {
+              "type": "paragraph",
+              "text": "Instead:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Confirm customs release.",
+                "Confirm shipping line destination charges have been paid.",
+                "Obtain carrier release / EDO.",
+                "Confirm terminal availability.",
+                "Book the truck.",
+                "Pick up the container.",
+                "Deliver to the consignee.",
+                "Unload the cargo quickly.",
+                "Return the empty container before the free-time deadline."
+              ],
+              "ordered": true
+            },
+            {
+              "type": "paragraph",
+              "text": "Every delay between these steps can potentially create additional charges."
+            }
+          ]
+        },
+        {
+          "id": "how-importers-can-reduce-customs-delays",
+          "heading": "How Importers Can Reduce Customs Delays",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "The best solution to customs problems is often preparation before the vessel arrives."
+            },
+            {
+              "type": "paragraph",
+              "text": "Before shipping from China, importers should confirm:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Correct product description",
+                "Correct HS Code",
+                "Commercial Invoice",
+                "Packing List",
+                "Country of origin",
+                "Import permits",
+                "Product certificates",
+                "Packaging materials",
+                "Wooden packaging requirements",
+                "Customs broker appointment",
+                "Importer details",
+                "Destination charges",
+                "Estimated duty and tax"
+              ],
+              "ordered": false
+            },
+            {
+              "type": "paragraph",
+              "text": "For certain products, this checking should happen **before the goods even leave the factory**."
+            },
+            {
+              "type": "paragraph",
+              "text": "Finding out that a product requires a special permit only after it reaches the destination port can be extremely expensive."
+            },
+            {
+              "type": "paragraph",
+              "text": "For more preparation tips, see our guide on [documents required when shipping from China](/blog/documents-required-shipping-from-china)."
+            }
+          ]
+        },
+        {
+          "id": "when-should-the-customs-broker-start-working",
+          "heading": "When Should the Customs Broker Start Working?",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Do not wait until the vessel arrives."
+            },
+            {
+              "type": "paragraph",
+              "text": "For many shipments, the customs broker should receive the documents before arrival so that they can:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Review the documents",
+                "Identify missing information",
+                "Confirm the HS Code",
+                "Estimate duties and taxes",
+                "Prepare the customs declaration",
+                "Identify possible import restrictions"
+              ],
+              "ordered": false
+            },
+            {
+              "type": "paragraph",
+              "text": "The exact timing depends on the destination country and shipment, but earlier preparation generally gives more time to solve problems before storage charges begin accumulating."
+            }
+          ]
+        },
+        {
+          "id": "communication-is-just-as-important-as-customs-clearance",
+          "heading": "Communication Is Just as Important as Customs Clearance",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "When cargo is held by customs, importers often become anxious because they do not know what is happening."
+            },
+            {
+              "type": "paragraph",
+              "text": "A freight forwarder should not simply tell the customer:"
+            },
+            {
+              "type": "quote",
+              "text": "“Still waiting for customs.”"
+            },
+            {
+              "type": "paragraph",
+              "text": "A more useful update would explain:"
+            },
+            {
+              "type": "quote",
+              "text": "“The declaration has been submitted. The container has been selected for customs scanning and is currently waiting for the inspection appointment. No additional documents have been requested at this stage. We are following up with the customs broker and will update you once the inspection is completed.”"
+            },
+            {
+              "type": "paragraph",
+              "text": "That tells the importer:"
+            },
+            {
+              "type": "paragraph",
+              "text": "**where the cargo is, why it is delayed, and what happens next.**"
+            },
+            {
+              "type": "paragraph",
+              "text": "Good logistics is not only about moving cargo. It is also about giving customers accurate information at every important stage."
+            }
+          ]
+        },
+        {
+          "id": "how-this-fits-into-the-wider-import-process",
+          "heading": "How This Fits Into the Wider Import Process",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Customs release is only one part of the complete import chain."
+            },
+            {
+              "type": "paragraph",
+              "text": "If you are importing from China to Australia, you may also find these guides useful:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "[What Happens After China Customs Release?](/blog/australia-import-process-after-china-customs-release)",
+                "[DDP Shipping from China to Australia](/blog/ddp-shipping-china-australia)",
+                "[Shipping Cost from China to Australia](/blog/china-australia-shipping-cost)",
+                "[FCL vs LCL Shipping from China to Australia](/blog/fcl-vs-lcl-china-australia)"
+              ],
+              "ordered": false
+            },
+            {
+              "type": "paragraph",
+              "text": "These articles explain how export clearance, ocean freight, import clearance, carrier release and delivery fit together."
+            }
+          ]
+        },
+        {
+          "id": "final-thoughts",
+          "heading": "Final Thoughts",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "A customs hold can be frustrating, but it does not necessarily mean something is wrong with the shipment."
+            },
+            {
+              "type": "paragraph",
+              "text": "The key is to identify the exact reason for the delay and respond quickly."
+            },
+            {
+              "type": "paragraph",
+              "text": "And once customs releases the cargo, the importer should immediately move on to:"
+            },
+            {
+              "type": "paragraph",
+              "text": "**carrier release → destination charges → EDO → truck pickup → delivery → unloading → empty container return**"
+            },
+            {
+              "type": "paragraph",
+              "text": "The faster these steps are coordinated, the lower the risk of unnecessary port storage, demurrage and container detention charges."
+            },
+            {
+              "type": "paragraph",
+              "text": "If you are importing goods from China and are unsure about customs preparation, shipping documents, destination charges or container release procedures, **TengYoda Logistics** can assist with shipping planning, document coordination, FCL/LCL ocean freight and destination logistics support."
+            },
+            {
+              "type": "paragraph",
+              "text": "For a broader overview of the import process, you can also read our [first-time importing from China guide](/blog/first-time-importing-from-china-guide)."
             }
           ]
         }
@@ -6918,6 +8400,671 @@ export const markdownPosts: BlogPost[] = [
             {
               "type": "paragraph",
               "text": "**Need a China-to-Australia shipping plan? Contact TengYoda Logistics for a solution based on your actual cargo.**"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "slug": "shipping-500-cars-china-to-oman-roro-vs-container",
+    "publishedAt": "2026-09-12",
+    "author": "TengYoda Logistics",
+    "image": {
+      "src": "/article-images/china-oman-vehicle-shipping-cover.webp",
+      "alt": "RoRo and container shipping options for cars at a Chinese export terminal"
+    },
+    "updatedAt": "2026-09-12",
+    "content": {
+      "category": "RORO & PROJECT CARGO",
+      "title": "Shipping 500 Cars from China to Oman: RoRo vs 40HQ Container Cost and Risk",
+      "summary": "A practical case study comparing RoRo and 40HQ container shipping for 500 sedans from China to Oman, including loading, unloading, cost and risk.",
+      "introduction": "An enquiry for 500 Toyota Corolla sedans from China to Oman may sound simple: find a vessel, obtain a rate and book the shipment. In practice, the freight rate is only one part of the decision. During a recent route review, we had to answer several connected questions: - Should the vehicles move by RoRo or in 40HQ containers? - Is the quoted rate based on cubic metres, vehicles or containers? - Can four sedans genuinely fit inside one 40HQ? - What equipment is required to load and unload the upper vehicles? - Is the container carrier-owned (COC) or shipper-owned (SOC)? - Are destination unloading and rack-disposal costs included? - If the vehicles originate inland, does a Yangtze River barge connection really reduce the total cost? This case study shows how we worked through those questions. The purpose is not to publish a permanent freight tariff. Rates change, and every booking still requires carrier confirmation. The useful lesson is the method: calculate the known cost, expose the missing cost and test whether the operational plan can actually be completed at destination.",
+      "sections": [
+        {
+          "id": "1-start-with-the-exact-vehicle-not-only-the-model-name",
+          "heading": "1. Start with the exact vehicle—not only the model name",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "“Toyota Corolla” is not enough information for a final booking. The sedan, hatchback and Corolla Cross have different dimensions. Model year, trim, petrol, hybrid and electric configurations can also change weight and regulatory treatment."
+            },
+            {
+              "type": "paragraph",
+              "text": "For the initial calculation, we used the following Corolla Sedan reference dimensions:"
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Item",
+                "Working value"
+              ],
+              "rows": [
+                [
+                  "Length",
+                  "4.630 m"
+                ],
+                [
+                  "Width",
+                  "1.780 m"
+                ],
+                [
+                  "Height",
+                  "1.435 m"
+                ],
+                [
+                  "Maximum reference kerb weight",
+                  "1,430 kg"
+                ],
+                [
+                  "Calculated shipping volume",
+                  "11.826 CBM per vehicle"
+                ]
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "The volume calculation is:"
+            },
+            {
+              "type": "paragraph",
+              "text": "`4.630 × 1.780 × 1.435 = 11.826 CBM`"
+            },
+            {
+              "type": "paragraph",
+              "text": "For 500 vehicles:"
+            },
+            {
+              "type": "paragraph",
+              "text": "`11.826 × 500 = 5,913.20 CBM`"
+            },
+            {
+              "type": "paragraph",
+              "text": "These are planning figures, not a substitute for the seller’s vehicle specification sheet. Toyota also states that dimensions and weights are approximate and subject to vehicle variation. Before booking, we would request the model year, powertrain, exact trim, VIN list and actual condition of every vehicle."
+            },
+            {
+              "type": "image",
+              "alt": "Pre-shipment inspection of export sedans",
+              "src": "/article-images/pre-shipment-vehicle-inspection.webp",
+              "caption": "A condition report, photographs, VIN control and checks for leaks, tyres, battery and fuel status should be completed before delivery to the terminal."
+            }
+          ]
+        },
+        {
+          "id": "2-the-first-option-roro-from-nansha-to-duqm",
+          "heading": "2. The first option: RoRo from Nansha to Duqm",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "The first working option was a RoRo service from Nansha, China, to Duqm, Oman."
+            },
+            {
+              "type": "paragraph",
+              "text": "The indicative rate structure received for this case was:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Ocean freight: USD 235 per CBM",
+                "Carrier handling: USD 100 per bill of lading",
+                "Nansha terminal charge: CNY 35 per CBM",
+                "Booking, customs declaration, tallying, documentation and operation: CNY 2,300 per shipment",
+                "Vehicles must be operational and driven during loading and discharge",
+                "Other charges such as labelling or amendments: at cost if incurred"
+              ],
+              "ordered": false
+            },
+            {
+              "type": "paragraph",
+              "text": "Using the estimated 5,913.20 CBM, the known-cost calculation was approximately:"
+            },
+            {
+              "type": "table",
+              "headers": [
+                "RoRo cost item",
+                "Calculation",
+                "Estimated amount"
+              ],
+              "rows": [
+                [
+                  "Ocean freight",
+                  "5,913.20 CBM × USD 235",
+                  "USD 1,389,603"
+                ],
+                [
+                  "Carrier handling",
+                  "Per shipment",
+                  "USD 100"
+                ],
+                [
+                  "Nansha volume charge",
+                  "5,913.20 CBM × CNY 35",
+                  "CNY 206,962"
+                ],
+                [
+                  "Fixed origin charges",
+                  "Per shipment",
+                  "CNY 2,300"
+                ],
+                [
+                  "Total CNY charges",
+                  "",
+                  "CNY 209,262"
+                ]
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Using a working conversion rate of CNY 6.71 to USD 1 for this internal comparison, the known RoRo cost was approximately **USD 1,420,890**, or **USD 2,841.78 per vehicle**."
+            },
+            {
+              "type": "paragraph",
+              "text": "RoRo remains operationally attractive for a large fleet. Vehicles can be driven on and off the vessel, and there is no container rack to dismantle. However, RoRo pricing based on measurement can become expensive for a high-volume sedan order. The vehicles must also meet the carrier’s running-condition, fuel, battery and leakage requirements."
+            }
+          ]
+        },
+        {
+          "id": "3-the-alternative-four-sedans-in-one-carrier-owned-40hq",
+          "heading": "3. The alternative: four sedans in one carrier-owned 40HQ",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "The second option used carrier-owned 40HQ containers, or COC containers."
+            },
+            {
+              "type": "paragraph",
+              "text": "Without a professional rack, a 40HQ can normally accept only two Corolla-size sedans on the floor. Three cars cannot simply be parked end to end because their combined length exceeds the container’s usable internal length."
+            },
+            {
+              "type": "paragraph",
+              "text": "A certified automotive rack changes the geometry. It raises and tilts selected vehicles, allowing their horizontal footprints to overlap while keeping the cars physically separated. A specialist system can make four compact cars in one container possible, but the rack design, vehicle combination and clearances must be verified before loading."
+            },
+            {
+              "type": "image",
+              "alt": "Conceptual four-car automotive rack arrangement inside a 40HQ",
+              "src": "/article-images/four-cars-40hq-rack-concept.webp",
+              "caption": "Concept illustration only. The rack supplier must issue the final vehicle-specific loading drawing, safe working load information and operating instructions."
+            },
+            {
+              "type": "paragraph",
+              "text": "For this comparison, the known COC-container costs were:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Nansha–Duqm ocean freight: USD 8,300 per 40HQ",
+                "Nansha origin charges: CNY 2,500 per container",
+                "Loading and lashing: CNY 1,000 per container",
+                "Professional vehicle rack: estimated CNY 500 per vehicle",
+                "Loading assumption: four cars per 40HQ"
+              ],
+              "ordered": false
+            },
+            {
+              "type": "paragraph",
+              "text": "The known cost per container was therefore:"
+            },
+            {
+              "type": "table",
+              "headers": [
+                "40HQ cost item",
+                "Estimated amount"
+              ],
+              "rows": [
+                [
+                  "Ocean freight",
+                  "USD 8,300"
+                ],
+                [
+                  "Origin charges",
+                  "CNY 2,500"
+                ],
+                [
+                  "Loading and lashing",
+                  "CNY 1,000"
+                ],
+                [
+                  "Four rack positions",
+                  "CNY 2,000"
+                ],
+                [
+                  "Total CNY cost",
+                  "CNY 5,500"
+                ],
+                [
+                  "Converted CNY cost at 6.71",
+                  "USD 819.67"
+                ],
+                [
+                  "**Known cost per 40HQ**",
+                  "**USD 9,119.67**"
+                ]
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "At four cars per container, the known cost was approximately **USD 2,279.92 per car**."
+            },
+            {
+              "type": "paragraph",
+              "text": "For 500 cars, the plan would require **125 × 40HQ containers**, with a known total cost of approximately **USD 1,139,959**."
+            }
+          ]
+        },
+        {
+          "id": "4-the-headline-saving-and-why-we-do-not-stop-there",
+          "heading": "4. The headline saving—and why we do not stop there",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "The initial comparison showed:"
+            },
+            {
+              "type": "table",
+              "headers": [
+                "Option",
+                "Known cost per vehicle",
+                "Known cost for 500 vehicles"
+              ],
+              "rows": [
+                [
+                  "RoRo, Nansha–Duqm",
+                  "USD 2,841.78",
+                  "USD 1,420,890"
+                ],
+                [
+                  "Four-car 40HQ COC plan",
+                  "USD 2,279.92",
+                  "USD 1,139,959"
+                ],
+                [
+                  "**Initial difference**",
+                  "**USD 561.86**",
+                  "**USD 280,931**"
+                ]
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "On paper, the container plan reduced the known cost by almost 20%. That is a meaningful opportunity—but it is not yet a guaranteed saving."
+            },
+            {
+              "type": "paragraph",
+              "text": "The comparison did not yet include every possible destination cost, such as:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Discharging the container from the vessel",
+                "Moving the container to a suitable vehicle-handling yard",
+                "Mobile ramps, dock access or container grounding",
+                "Hydraulic or chain-hoist equipment for lowering the rack",
+                "Skilled labour to release the upper vehicles safely",
+                "Rack dismantling, storage, recycling or return freight",
+                "Container detention if unloading takes too long",
+                "Vehicle customs clearance, duties and taxes",
+                "Damage survey, insurance or exceptional carrier requirements"
+              ],
+              "ordered": false
+            },
+            {
+              "type": "paragraph",
+              "text": "This is where a low ocean rate can become an expensive shipment. A transport plan is only cheaper if the importer can complete the destination operation without delay, damage or unplanned equipment hire."
+            }
+          ]
+        },
+        {
+          "id": "5-how-the-four-car-loading-operation-should-work",
+          "heading": "5. How the four-car loading operation should work",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "The four-car arrangement cannot be created with ordinary straps alone. A typical removable in-container rack operation follows a controlled sequence:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Inspect the empty 40HQ, floor and approved securing points.",
+                "Install the rear rack assembly according to the manufacturer’s drawing.",
+                "Drive the first vehicle onto the lowered rack platform.",
+                "Secure all four wheels before raising or tilting the platform.",
+                "Raise the platform using the approved lifting method and insert the mechanical safety locks.",
+                "Position and secure the lower vehicle beneath the raised vehicle.",
+                "Repeat the process for the door-end pair.",
+                "Check roof, bumper, underbody and container-wall clearance.",
+                "Verify weight distribution, rack locks, wheel chocks and strap tension.",
+                "Photograph the complete loading and securing condition before sealing the container."
+              ],
+              "ordered": true
+            },
+            {
+              "type": "image",
+              "alt": "Professional automotive rack loading at Nansha",
+              "src": "/article-images/nansha-car-container-loading.webp",
+              "caption": "No worker should stand beneath a suspended vehicle. The lifting and securing procedure must follow the rack supplier’s instructions."
+            },
+            {
+              "type": "paragraph",
+              "text": "Before accepting a low rack price, we would ask the supplier for:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Rack photographs and an actual loading video",
+                "Safe working load and test or certification information",
+                "A loading drawing based on the exact Corolla dimensions",
+                "A complete unloading manual and equipment list",
+                "Confirmation that the ocean carrier accepts the system",
+                "Responsibility for rack failure or vehicle damage"
+              ],
+              "ordered": false
+            }
+          ]
+        },
+        {
+          "id": "6-unloading-at-duqm-must-be-planned-before-loading-at-nansha",
+          "heading": "6. Unloading at Duqm must be planned before loading at Nansha",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "The destination cannot discover the rack system only after the container arrives."
+            },
+            {
+              "type": "paragraph",
+              "text": "Before departure, the Duqm-side agent should confirm access to:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "A dock-height platform or rated mobile vehicle ramp",
+                "The lifting mechanism required by the selected rack",
+                "Trained vehicle-handling personnel",
+                "Wheel-chock, strap and locking-pin tools",
+                "A safe parking and inspection area",
+                "A plan for dismantling and disposing of or returning the rack"
+              ],
+              "ordered": false
+            },
+            {
+              "type": "paragraph",
+              "text": "The unloading order is generally the reverse of loading, but the exact sequence depends on the rack design. In many arrangements, the lower vehicle nearest the doors is removed first, creating space to lower and discharge the upper vehicle. The front rack can then be dismantled before the rear pair is handled."
+            },
+            {
+              "type": "image",
+              "alt": "Vehicle rack unloading at Duqm",
+              "src": "/article-images/duqm-car-container-unloading.webp",
+              "caption": "The destination yard needs the correct ramp, lifting system and trained labour. Improvised unloading can erase the entire freight saving."
+            }
+          ]
+        },
+        {
+          "id": "7-coc-and-soc-are-not-the-same-quotation",
+          "heading": "7. COC and SOC are not the same quotation",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "The USD 8,300 container rate in this case was based on a **carrier-owned container (COC)**. The shipping line supplies the equipment, and the consignee must return the empty container to the nominated depot within the allowed free time."
+            },
+            {
+              "type": "paragraph",
+              "text": "A **shipper-owned container (SOC)** is owned or supplied by the cargo side. It may be useful for special projects or where empty-container return is difficult, but it is not automatically cheaper. The carrier normally reviews the SOC separately and may require:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "A valid CSC safety plate and inspection status",
+                "Container age, specification and ownership details",
+                "Photographs and structural-condition evidence",
+                "SOC acceptance for the selected vessel and route",
+                "Separate terminal or handling approval"
+              ],
+              "ordered": false
+            },
+            {
+              "type": "paragraph",
+              "text": "For this reason, we did not insert an unconfirmed SOC figure into the comparison. The correct answer was to wait for the carrier’s review rather than promise a price that might later be rejected."
+            }
+          ]
+        },
+        {
+          "id": "8-what-if-the-cars-originate-in-chongqing",
+          "heading": "8. What if the cars originate in Chongqing?",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "We also reviewed an inland-origin concept involving a Chongqing–Shanghai Yangtze barge and a separate Shanghai–Sohar ocean rate."
+            },
+            {
+              "type": "paragraph",
+              "text": "The initial inputs were:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Shanghai–Sohar ocean freight: USD 8,550 per 40-foot container",
+                "Chongqing–Shanghai barge: CNY 5,000 per container"
+              ],
+              "ordered": false
+            },
+            {
+              "type": "paragraph",
+              "text": "At the same working exchange rate, those two lines alone equalled approximately USD 9,295 per container—before adding origin terminal costs, vehicle racks, loading, lashing, Shanghai transfer operations and destination unloading."
+            },
+            {
+              "type": "paragraph",
+              "text": "There is another important point: Sohar and Duqm are different Oman ports. Comparing a Shanghai–Sohar rate directly with a Nansha–Duqm rate can be misleading if the final inland delivery point is not included. The cheapest port-to-port rate may create a longer and more expensive final delivery."
+            },
+            {
+              "type": "paragraph",
+              "text": "For inland China cargo, we compare the complete chain:"
+            },
+            {
+              "type": "paragraph",
+              "text": "**factory → vehicle yard → loading port or river terminal → transshipment → Oman port → unloading yard → final destination**"
+            }
+          ]
+        },
+        {
+          "id": "9-our-recommended-lower-risk-execution-plan",
+          "heading": "9. Our recommended lower-risk execution plan",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "For a shipment of 500 vehicles, we would not immediately load all 125 containers based only on a drawing and a low rack price."
+            },
+            {
+              "type": "subheading",
+              "text": "Phase 1: Validate the data"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Obtain the exact model, year, powertrain and dimensions.",
+                "Separate petrol, hybrid and electric vehicles.",
+                "Confirm running condition, keys, battery status and fuel policy.",
+                "Prepare the VIN and vehicle-condition lists."
+              ],
+              "ordered": false
+            },
+            {
+              "type": "subheading",
+              "text": "Phase 2: Obtain written approvals"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Confirm vehicle acceptance with the selected ocean carrier.",
+                "Confirm whether the cargo must be declared under the carrier’s dangerous-goods policy.",
+                "Approve the rack and lashing method.",
+                "Confirm Duqm terminal and off-terminal handling requirements."
+              ],
+              "ordered": false
+            },
+            {
+              "type": "subheading",
+              "text": "Phase 3: Run one test container"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Load four representative vehicles.",
+                "Record loading time, clearances and all securing points.",
+                "Verify the actual loading cost.",
+                "Send the loading and unloading instructions to the Oman agent.",
+                "Confirm that the destination team can lower and remove every vehicle safely."
+              ],
+              "ordered": false
+            },
+            {
+              "type": "subheading",
+              "text": "Phase 4: Scale the programme"
+            },
+            {
+              "type": "paragraph",
+              "text": "Once the test is accepted, divide the remaining volume into controlled batches. This reduces yard congestion, allows time for document correction and limits the number of vehicles exposed if the carrier changes a requirement."
+            }
+          ]
+        },
+        {
+          "id": "10-what-importers-should-request-before-choosing-a-vehicle-shipping-quote",
+          "heading": "10. What importers should request before choosing a vehicle-shipping quote",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Before comparing two offers, ask both forwarders to confirm the same scope:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Exact origin and destination port",
+                "RoRo, COC container or SOC container",
+                "Rate basis: per vehicle, CBM, metric tonne or container",
+                "Origin terminal and documentation charges",
+                "Rack, loading and lashing charges",
+                "Vehicle-running and fuel requirements",
+                "Destination unloading method and cost",
+                "Free time, detention and storage rules",
+                "Customs clearance, tax and inland delivery exclusions",
+                "Carrier approval and rate validity"
+              ],
+              "ordered": true
+            },
+            {
+              "type": "paragraph",
+              "text": "A useful quotation should show not only what is included, but also what is still unknown."
+            }
+          ]
+        },
+        {
+          "id": "conclusion-lower-cost-comes-from-controlling-the-whole-operation",
+          "heading": "Conclusion: lower cost comes from controlling the whole operation",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "The initial 40HQ solution showed a potential saving of approximately USD 562 per vehicle compared with the RoRo working estimate. For 500 cars, that difference was large enough to deserve serious investigation."
+            },
+            {
+              "type": "paragraph",
+              "text": "But the better solution was not simply “use containers.” The better solution was:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "verify the exact vehicle;",
+                "use an approved rack;",
+                "test one container;",
+                "plan unloading in Oman before loading in China;",
+                "confirm the carrier’s vehicle and dangerous-goods requirements;",
+                "include detention and destination handling in the final comparison; and",
+                "scale only after the process works."
+              ],
+              "ordered": false
+            },
+            {
+              "type": "paragraph",
+              "text": "That is how freight costs are reduced without transferring hidden risk to the importer."
+            },
+            {
+              "type": "paragraph",
+              "text": "If you are comparing RoRo, container or project-cargo options from China, TengYoda Logistics can prepare a route-specific loading and landed-cost plan. Learn more about our [RoRo and project cargo service](/services/roro-project-cargo/), review our [sea freight solutions](/services/sea-freight/), or [contact our team](/#contact) with the vehicle list, origin city and destination port."
+            }
+          ]
+        },
+        {
+          "id": "frequently-asked-questions",
+          "heading": "Frequently asked questions",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "subheading",
+              "text": "Can four Toyota Corolla sedans fit in one 40HQ?"
+            },
+            {
+              "type": "paragraph",
+              "text": "Potentially, yes—when a vehicle-specific, approved automotive rack system is used. Four cars cannot be safely loaded by ordinary floor loading and straps alone. Final feasibility depends on the exact model dimensions, rack geometry and carrier acceptance."
+            },
+            {
+              "type": "subheading",
+              "text": "Is RoRo safer than container shipping for cars?"
+            },
+            {
+              "type": "paragraph",
+              "text": "Both can be safe when professionally operated. RoRo simplifies loading and discharge, while a sealed container offers additional enclosure and access control. Container risk increases when unapproved racks, poor lashing or improvised destination unloading are used."
+            },
+            {
+              "type": "subheading",
+              "text": "Does the importer need special equipment to unload four cars from a container?"
+            },
+            {
+              "type": "paragraph",
+              "text": "Yes. The destination normally requires a suitable ramp or dock, the rack’s specified lifting or lowering equipment, trained personnel and sufficient space to dismantle the rack and inspect the vehicles."
+            },
+            {
+              "type": "subheading",
+              "text": "Is an SOC container cheaper than a carrier-owned container?"
+            },
+            {
+              "type": "paragraph",
+              "text": "Not necessarily. SOC equipment requires separate carrier acceptance and valid container documentation. Purchase, positioning, terminal handling and disposal or reuse costs must be included before comparing it with a COC rate."
+            },
+            {
+              "type": "subheading",
+              "text": "When should the freight forwarder check vehicle dangerous-goods requirements?"
+            },
+            {
+              "type": "paragraph",
+              "text": "Before booking. Requirements depend on the powertrain, battery type, fuel condition, stowage method and carrier policy. Petrol, hybrid and electric vehicles should be identified separately in the booking data."
+            }
+          ]
+        },
+        {
+          "id": "technical-references",
+          "heading": "Technical references",
+          "paragraphs": [],
+          "blocks": [
+            {
+              "type": "list",
+              "items": [
+                "[Toyota Corolla Sedan specification table](https://www.toyota.com.au/-/media/toyota/main-site/vehicle-hubs/corolla/files/20251009_corolla-sedan-spec_table_gtp009346.pdf)",
+                "[Trans-Rak R-RAK vehicle container system](https://www.trans-rak.com/products/r-rak)",
+                "[Maersk requirements for booking vehicles](https://www.maersk.com/news/articles/2021/11/02/requirements-for-booking-vehicles)"
+              ],
+              "ordered": false
+            },
+            {
+              "type": "quote",
+              "text": "**Pricing disclaimer:** All monetary figures are an illustrative case calculation based on rate inputs available on the review date. They are not a current offer, tariff or guarantee of space. Final charges depend on carrier confirmation, actual vehicle details, sailing date, equipment, terminal rules and destination services."
             }
           ]
         }

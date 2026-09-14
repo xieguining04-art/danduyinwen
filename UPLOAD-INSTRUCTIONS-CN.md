@@ -1,20 +1,24 @@
-# TengYoda 网站增量更新说明
+# TengYoda 博文增量更新说明
 
-本包只包含本次新增或更新的 8 个网站文件，不需要覆盖整个项目。
+本包用于升级现有文章 **How to Choose a Reliable Freight Forwarder in China**，只包含本次变更文件，不需要覆盖整个网站。
 
-## 建议操作
+## 本次更新
 
-1. 先保留当前 GitHub 仓库作为备份。
-2. 将本包中的文件按原目录上传到仓库：
-   - `articles/`：新增 1 篇文章。
-   - `public/article-images/`：新增 5 张 WebP 图片。
-   - `lib/`：更新 SEO 配置和自动生成的文章索引。
-3. 提交到 `main` 分支，等待 GitHub Actions 部署完成。
-4. 部署后访问：
-   `https://tengyodalogistics.com/blog/shipping-500-cars-china-to-oman-roro-vs-container/`
+- 保留原文章网址和发布日期，避免损失已有收录。
+- 将旧短文升级为约 2,900 词的英文 SEO 指南。
+- 新增 5 张原创 WebP 配图。
+- 新增 SEO 标题、描述、关键词方向及相关服务内链。
+- 更新自动生成的文章索引。
 
-## 说明
+## 上传路径
 
-- `lib/markdown-posts.ts` 会在 `npm run build` 时由 `tools/publish_articles.py` 自动生成。本包仍提供了已更新版本，方便 GitHub 源代码与本次文章保持一致。
-- 本次没有删除或重命名现有页面。
-- 已通过 TypeScript、Next.js 静态构建、站内链接、图片路径、canonical、Article 结构化数据和 sitemap 检查。
+1. 将 `articles/how-to-choose-reliable-china-freight-forwarder.md` 上传到仓库的 `articles/`，覆盖同名旧文章。
+2. 将 `public/article-images/` 内 5 张图片上传到仓库相同目录。
+3. 将 `lib/seo.ts` 和 `lib/markdown-posts.ts` 上传到仓库的 `lib/`，覆盖同名文件。
+4. 提交到 `main` 分支并等待 GitHub Actions 部署完成。
+
+## 部署后网址
+
+`https://tengyodalogistics.com/blog/how-to-choose-reliable-china-freight-forwarder/`
+
+不要另外创建第二篇相同主题文章，否则两个页面可能竞争同一关键词。

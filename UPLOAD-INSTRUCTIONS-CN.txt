@@ -1,18 +1,17 @@
-第五篇文章增量更新包（2026-09-15）
+第六篇文章增量更新包（2026-09-15）
 
-推荐使用方法：
+推荐上传方法：
 1. 解压本压缩包。
-2. 进入现有 GitHub 仓库根目录。
-3. 按压缩包内的原目录结构上传并覆盖文件：articles、lib、public。
-4. 保持文件名和目录不变，然后提交到 main 分支。
-5. 等待 GitHub Pages 自动部署完成。
+2. 打开现有 GitHub 仓库根目录，选择 Add file → Upload files。
+3. 按原目录结构上传并覆盖 articles、lib、public 文件夹内的文件。
+4. 提交到 main 分支，等待 GitHub Pages 自动部署成功。
 
 本次新增页面：
-https://tengyodalogistics.com/blog/can-my-product-be-exported-from-china/
+https://tengyodalogistics.com/blog/shipping-marks-for-china-consolidation/
 
-本包只包含第五篇文章所需的新增或更新文件，不需要覆盖整个网站。
+本包只包含第六篇所需的新文件和更新文件，不需要覆盖整个网站。
 
-上传后建议检查：
-- 页面能够正常打开，标题和四张正文图片显示完整。
-- GitHub Actions / Pages 部署状态为成功。
-- 在 Google Search Console 的“网址检查”中测试上述网址，并请求编入索引。
+部署后请检查：
+- 文章页面和四张图片是否正常显示。
+- GitHub Actions 是否显示绿色成功标志。
+- 使用 Google Search Console 测试上述网址并请求编入索引。

@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${origin}/blog/`, changeFrequency: "weekly", priority: 0.8 },
     { url: `${origin}/services/`, changeFrequency: "monthly", priority: 0.9 },
     { url: `${origin}/shipping-from-china-to-nigeria/`, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${origin}/shipping-from-china-to-australia/`, changeFrequency: "monthly", priority: 0.9 },
     ...services.map(service => ({ url: `${origin}/services/${service.slug}/`, changeFrequency: "monthly" as const, priority: 0.8 })),
     ...blogPosts.map(post => ({ url: `${origin}/blog/${post.slug}/`, lastModified: `${post.publishedAt}T00:00:00Z`, changeFrequency: "monthly" as const, priority: 0.7 })),
   ];

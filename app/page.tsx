@@ -15,10 +15,133 @@ import { homepageServices, serviceLabel } from "@/lib/services";
 import { enquiryLinks } from "@/lib/company";
 import { sitePath } from "@/lib/site-path";
 
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://tengyodalogistics.com/#organization",
+  name: "TengYoda Supply Chain Co., Ltd.",
+  alternateName: "TengYoda Logistics",
+  url: "https://tengyodalogistics.com/",
+  logo: {
+    "@type": "ImageObject",
+    url: "https://tengyodalogistics.com/images/tengyoda-logo-solid.png",
+  },
+  description:
+    "China-headquartered international freight forwarder providing sea freight, air freight, breakbulk shipping, RoRo, project cargo, customs clearance, cargo consolidation, warehousing and door-to-door logistics services.",
+  email: "vinson_xie@tydscc.cn",
+  telephone: "+86-186-2024-4613",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress:
+      "Room 1011, Building 6, Runhe Jujin Science & Innovation Park, 51 Jianghai Road, Zhangcha Subdistrict, Chancheng District",
+    addressLocality: "Foshan",
+    addressRegion: "Guangdong",
+    addressCountry: "CN",
+  },
+  contactPoint: {
+    "@type": "ContactPoint",
+    contactType: "sales",
+    telephone: "+86-186-2024-4613",
+    email: "vinson_xie@tydscc.cn",
+    availableLanguage: ["English", "Chinese"],
+  },
+  sameAs: [
+    "https://www.instagram.com/vinson08251/",
+    "https://www.tiktok.com/@vinson300",
+  ],
+  areaServed: [
+    "Australia",
+    "Southeast Asia",
+    "Middle East",
+    "Africa",
+    "Europe",
+    "North America",
+    "South America",
+  ],
+};
+
+const freightServiceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://tengyodalogistics.com/#freight-forwarding-service",
+  name: "International Freight Forwarding Services from China",
+  serviceType: "International Freight Forwarding",
+  url: "https://tengyodalogistics.com/",
+  provider: {
+    "@id": "https://tengyodalogistics.com/#organization",
+  },
+  description:
+    "International freight forwarding from China including sea freight, air freight, breakbulk, RoRo, project cargo, customs clearance, cargo consolidation, warehousing and door-to-door delivery.",
+  areaServed: [
+    "Australia",
+    "Southeast Asia",
+    "Middle East",
+    "Africa",
+    "Europe",
+    "North America",
+    "South America",
+  ],
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Freight Forwarding Services",
+    itemListElement: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Sea Freight from China",
+          url: "https://tengyodalogistics.com/services/sea-freight/",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Air Freight from China",
+          url: "https://tengyodalogistics.com/services/air-freight/",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Breakbulk and Oversize Freight from China",
+          url: "https://tengyodalogistics.com/services/oversize-freight/",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "RoRo and Project Cargo Shipping",
+          url: "https://tengyodalogistics.com/services/roro-project-cargo/",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Cargo Consolidation from China",
+          url: "https://tengyodalogistics.com/services/cargo-consolidation/",
+        },
+      },
+    ],
+  },
+};
+
 export default function Home() {
   const enquiry = enquiryLinks();
   return (
-    <div className="site" id="top">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(freightServiceSchema) }}
+      />
+      <div className="site" id="top">
       <SiteHeader />
       <main id="main-content" tabIndex={-1}>
       <HeroCarousel />
@@ -68,6 +191,7 @@ export default function Home() {
       </main>
       <SiteFooter />
       <a className="float-wa" href={enquiry.whatsapp} target="_blank" rel="noreferrer" aria-label="WhatsApp TengYoda Logistics"><MessageCircle /></a>
-    </div>
+      </div>
+    </>
   );
 }

@@ -501,7 +501,15 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--orange); outlin
 .nigeria-service-grid article > p { grid-column: 1 / -1; margin: 0; color: var(--muted); font-size: 13px; line-height: 1.75; }
 .nigeria-split { display: grid; grid-template-columns: 1fr 1fr; gap: 75px; align-items: center; }
 .nigeria-split figure { margin: 0; }
-.nigeria-split figure img { display: block; width: 100%; height: 470px; object-fit: cover; }
+.nigeria-split figure img {
+  display: block;
+  width: 100%;
+  height: auto !important;
+  aspect-ratio: 3 / 2;
+  object-fit: contain !important;
+  object-position: center;
+  background: #061f30;
+}
 .nigeria-split figcaption { margin-top: 10px; color: var(--muted); font-size: 10px; line-height: 1.6; }
 .nigeria-project { background: #252831; color: white; }
 .nigeria-project .nigeria-split-reverse > div:first-child { order: 2; }
@@ -555,7 +563,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--orange); outlin
   .nigeria-facts > .wrap { grid-template-columns: 1fr; }
   .nigeria-facts .wrap > div { min-height: 0; border-left: 1px solid #ffffff20; }
   .nigeria-service-grid { grid-template-columns: 1fr; }
-  .nigeria-split figure img { height: 300px; }
+  .nigeria-split figure img { height: auto; }
   .nigeria-project-card { padding: 30px 24px; }
   .nigeria-process ol { grid-template-columns: 1fr; }
   .nigeria-process h3 { min-height: 0; }

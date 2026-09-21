@@ -475,6 +475,92 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--orange); outlin
   .service-photo-card:hover, .blog-card:hover, .related-service-links > a:hover { transform: none; }
 }
 
+/* China-to-Nigeria route landing page */
+.nigeria-hero h1 { max-width: 930px; }
+.nigeria-hero > .wrap > p { max-width: 790px; }
+.nigeria-hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 32px; }
+.nigeria-facts { background: #252831; color: white; }
+.nigeria-facts > .wrap { display: grid; grid-template-columns: repeat(4, 1fr); }
+.nigeria-facts .wrap > div { min-height: 126px; padding: 28px 24px; border-right: 1px solid #ffffff20; }
+.nigeria-facts .wrap > div:first-child { border-left: 1px solid #ffffff20; }
+.nigeria-facts small { display: block; margin-bottom: 13px; color: #ffae52; font-size: 9px; font-weight: 700; letter-spacing: .14em; }
+.nigeria-facts strong { display: block; font-size: 15px; line-height: 1.55; }
+.nigeria-content-grid { display: grid; grid-template-columns: 270px minmax(0, 1fr); gap: 85px; align-items: start; }
+.nigeria-toc { position: sticky; top: 30px; padding: 28px 24px; border-top: 3px solid var(--orange); background: var(--sand); }
+.nigeria-toc h2 { margin: 0 0 14px; font-size: 19px; }
+.nigeria-toc a { display: block; padding: 13px 0; border-bottom: 1px solid #d5dbdc; color: #455d6a; font-size: 12px; line-height: 1.5; }
+.nigeria-toc a:hover { color: #a64b00; }
+.nigeria-copy h2, .nigeria-heading h2, .nigeria-split h2, .nigeria-quote h2, .nigeria-faq h2 { margin: 18px 0 24px; font-size: clamp(34px, 3.7vw, 52px); line-height: 1.1; letter-spacing: -.035em; }
+.nigeria-note { margin-top: 35px; padding: 25px 28px; border-left: 4px solid var(--orange); background: #fff5ec; }
+.nigeria-note strong { color: var(--ink); font-size: 17px; }
+.nigeria-note p { margin: 10px 0 0; color: var(--muted); font-size: 14px; line-height: 1.75; }
+.nigeria-options, .nigeria-process, .nigeria-faq { background: #f7f7f8; }
+.nigeria-heading { max-width: 820px; margin-bottom: 42px; }
+.nigeria-heading > p, .nigeria-split p, .nigeria-quote p, .nigeria-faq > .wrap > div:first-child p { color: var(--muted); font-size: 15px; line-height: 1.85; }
+.nigeria-service-grid > article { display: grid; grid-template-columns: 1fr 25px; gap: 18px 25px; padding: 28px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.nigeria-service-grid article > p { grid-column: 1 / -1; margin: 0; color: var(--muted); font-size: 13px; line-height: 1.75; }
+.nigeria-split { display: grid; grid-template-columns: 1fr 1fr; gap: 75px; align-items: center; }
+.nigeria-split figure { margin: 0; }
+.nigeria-split figure img { display: block; width: 100%; height: 470px; object-fit: cover; }
+.nigeria-split figcaption { margin-top: 10px; color: var(--muted); font-size: 10px; line-height: 1.6; }
+.nigeria-project { background: #252831; color: white; }
+.nigeria-project .nigeria-split-reverse > div:first-child { order: 2; }
+.nigeria-project h2 { color: white; }
+.nigeria-project p { color: #d1d1d6; }
+.nigeria-project ul { list-style: none; margin: 26px 0 0; padding: 0; }
+.nigeria-project li { display: flex; gap: 13px; padding: 13px 0; border-bottom: 1px solid #ffffff1f; color: #ececef; font-size: 14px; line-height: 1.6; }
+.nigeria-project li svg { flex: 0 0 18px; color: var(--orange); }
+.nigeria-project-card { padding: 42px; background: var(--orange); color: #252831; }
+.nigeria-project-card > small { display: block; font-size: 10px; font-weight: 700; letter-spacing: .16em; }
+.nigeria-project-card > strong { display: block; margin-top: 20px; font-size: clamp(64px, 8vw, 110px); line-height: .9; letter-spacing: -.06em; }
+.nigeria-project-card > span { display: block; margin: 15px 0 35px; font-size: 17px; font-weight: 600; }
+.nigeria-project-card dl { margin: 0; border-top: 1px solid #25283160; }
+.nigeria-project-card dl > div { display: flex; justify-content: space-between; gap: 20px; padding: 14px 0; border-bottom: 1px solid #25283160; }
+.nigeria-project-card dt { font-size: 12px; }
+.nigeria-project-card dd { margin: 0; font-size: 13px; font-weight: 700; text-align: right; }
+.nigeria-process ol { display: grid; grid-template-columns: repeat(5, 1fr); margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+.nigeria-process li { padding: 25px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); background: white; }
+.nigeria-process li > span { color: #a64b00; font-size: 11px; font-weight: 700; }
+.nigeria-process h3 { min-height: 52px; margin: 18px 0 12px; font-size: 19px; line-height: 1.35; }
+.nigeria-process li p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.7; }
+.nigeria-quote { background: white; }
+.nigeria-quote .enquiry-actions { margin-top: 30px; }
+.nigeria-quote .enquiry-actions .outline-light { border-color: #252831; color: #252831; }
+.nigeria-quote .enquiry-actions small { color: var(--muted); }
+.nigeria-quote ul { margin: 0; padding: 0; list-style: none; }
+.nigeria-quote li { display: flex; align-items: flex-start; gap: 14px; padding: 17px 0; border-bottom: 1px solid var(--line); font-size: 14px; line-height: 1.65; }
+.nigeria-quote li svg { flex: 0 0 18px; color: var(--orange); }
+.nigeria-faq details { border-bottom: 1px solid #cfd3d5; }
+.nigeria-faq summary { display: flex; justify-content: space-between; gap: 25px; padding: 22px 0; color: var(--ink); font-size: 17px; font-weight: 600; line-height: 1.45; cursor: pointer; list-style: none; }
+.nigeria-faq summary::-webkit-details-marker { display: none; }
+.nigeria-faq summary span { color: #a64b00; font-size: 24px; font-weight: 400; }
+.nigeria-faq details[open] summary span { transform: rotate(45deg); }
+.nigeria-faq details p { margin: 0; padding: 0 42px 23px 0; color: var(--muted); font-size: 14px; line-height: 1.8; }
+
+@media (max-width: 1100px) {
+  .nigeria-content-grid { grid-template-columns: 235px minmax(0, 1fr); gap: 45px; }
+  .nigeria-process ol { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 820px) {
+  .nigeria-facts > .wrap { grid-template-columns: 1fr 1fr; }
+  .nigeria-facts .wrap > div:nth-child(3) { border-left: 1px solid #ffffff20; }
+  .nigeria-content-grid, .nigeria-split { grid-template-columns: 1fr; gap: 42px; }
+  .nigeria-toc { position: static; }
+  .nigeria-project .nigeria-split-reverse > div:first-child { order: 0; }
+  .nigeria-process ol { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 520px) {
+  .nigeria-hero-actions { align-items: stretch; flex-direction: column; }
+  .nigeria-hero-actions .button { justify-content: center; }
+  .nigeria-facts > .wrap { grid-template-columns: 1fr; }
+  .nigeria-facts .wrap > div { min-height: 0; border-left: 1px solid #ffffff20; }
+  .nigeria-service-grid { grid-template-columns: 1fr; }
+  .nigeria-split figure img { height: 300px; }
+  .nigeria-project-card { padding: 30px 24px; }
+  .nigeria-process ol { grid-template-columns: 1fr; }
+  .nigeria-process h3 { min-height: 0; }
+}
+
 /* A clearer six-service hierarchy and complete China location details. */
 .core-service-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .core-service-grid .service-cover { height: 215px; }

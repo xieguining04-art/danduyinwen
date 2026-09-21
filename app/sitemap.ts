@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { blogPosts } from "@/lib/blog-posts";
 import { services } from "@/lib/services";
 import { siteOrigin } from "@/lib/seo";
+import { countryRoutes } from "@/lib/country-routes";
 
 export const dynamic = "force-static";
 
@@ -14,7 +15,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${origin}/services/`, changeFrequency: "monthly", priority: 0.9 },
     { url: `${origin}/shipping-from-china-to-nigeria/`, changeFrequency: "monthly", priority: 0.9 },
     { url: `${origin}/shipping-from-china-to-australia/`, changeFrequency: "monthly", priority: 0.9 },
-    { url: `${origin}/shipping-from-china-to-oman/`, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${origin}/shipping-from-china-to-kenya/`, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${origin}/shipping-routes/`, changeFrequency: "monthly", priority: 0.9 },
+    ...countryRoutes.map(route => ({ url: `${origin}/${route.route}/`, changeFrequency: "monthly" as const, priority: 0.9 })),
     ...services.map(service => ({ url: `${origin}/services/${service.slug}/`, changeFrequency: "monthly" as const, priority: 0.8 })),
     ...blogPosts.map(post => ({ url: `${origin}/blog/${post.slug}/`, lastModified: `${post.publishedAt}T00:00:00Z`, changeFrequency: "monthly" as const, priority: 0.7 })),
   ];

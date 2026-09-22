@@ -4,6 +4,7 @@ import { ArrowRight, Check, MessageCircle } from "lucide-react";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { EnquiryActions } from "@/components/enquiry-actions";
+import { RelatedShippingRoutes } from "@/components/related-shipping-routes";
 import { countryRoutes, getCountryRoute } from "@/lib/country-routes";
 import { enquiryLinks } from "@/lib/company";
 import { siteOrigin } from "@/lib/seo";
@@ -52,6 +53,7 @@ export default async function CountryShippingPage({ params }: { params: Promise<
     <section className="section nigeria-process" id="process"><div className="wrap"><div className="nigeria-heading"><span className="kicker"><i />HOW IT WORKS</span><h2>From China supplier to destination handoff.</h2></div><ol>{[["Share the cargo", "Send products, packages, dimensions, weights, supplier locations, ready dates and destination."],["Compare methods", "Review suitable ocean, air or specialist cargo options."],["Define the scope", "Confirm origin, international freight and requested destination tasks and exclusions."],["Coordinate in China", "Arrange agreed collection, consolidation, export preparation and carrier handoff."],["Prepare arrival", "Share documents and arrival information for clearance, release and delivery planning."]].map(([h,c],i)=><li key={h}><span>0{i+1}</span><div><h3>{h}</h3><p>{c}</p></div></li>)}</ol></div></section>
     <section className="section nigeria-quote" id="quote-checklist"><div className="wrap nigeria-content-grid"><div><span className="kicker"><i />BEFORE YOU ENQUIRE</span><h2>Send complete cargo details.</h2><p>Accurate packed information reduces assumptions and helps compare options consistently.</p><EnquiryActions topic={topic} /></div><ul>{["Product description and HS code if known","Package count, dimensions and gross weight","Supplier locations and cargo-ready dates",`Port or final address in ${item.shortName}`,"Photos and packing method","Special handling or controlled characteristics","Requested Incoterm and delivery scope","Consignee and document requirements"].map(x=><li key={x}><Check />{x}</li>)}</ul></div></section>
     <section className="section nigeria-faq" id="faq"><div className="wrap nigeria-content-grid"><div><span className="kicker"><i />FAQ</span><h2>China-to-{item.shortName} shipping questions.</h2><p>Rates, schedules, customs and acceptance are confirmed shipment by shipment.</p></div><div>{faqs.map(x=><details key={x.q}><summary>{x.q}<span>+</span></summary><p>{x.a}</p></details>)}</div></div></section>
+    <RelatedShippingRoutes currentRoute={item.route} />
     <section className="blog-cta"><div className="wrap"><div><span className="kicker light"><i />A DIRECT CONVERSATION WITH VINSON</span><h2>Planning a shipment from China to {item.shortName}?</h2><p>Share the actual cargo and destination for a shipment-specific assessment.</p></div><EnquiryActions topic={topic} /></div></section>
   </main><SiteFooter /><a className="float-wa" href={quoteUrl} target="_blank" rel="noreferrer" aria-label="Contact Vinson on WhatsApp"><MessageCircle /></a></div>;
 }

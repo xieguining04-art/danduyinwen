@@ -3,6 +3,7 @@ import { ArrowRight, Check, MessageCircle } from "lucide-react";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { EnquiryActions } from "@/components/enquiry-actions";
+import { RelatedShippingRoutes } from "@/components/related-shipping-routes";
 import { enquiryLinks } from "@/lib/company";
 import { siteOrigin } from "@/lib/seo";
 import { sitePath } from "@/lib/site-path";
@@ -109,6 +110,7 @@ export default function AustraliaShippingPage() {
 
       <section className="section nigeria-faq" id="faq"><div className="wrap nigeria-content-grid"><div><span className="kicker"><i />FAQ</span><h2>China-to-Australia shipping questions.</h2><p>Rates, schedules and import requirements change, so the answers focus on decisions that remain useful.</p></div><div>{faqs.map(item => <details key={item.question}><summary>{item.question}<span>+</span></summary><p>{item.answer}</p></details>)}</div></div></section>
 
+      <RelatedShippingRoutes currentRoute="shipping-from-china-to-australia" />
       <section className="blog-cta"><div className="wrap"><div><span className="kicker light"><i />A DIRECT CONVERSATION WITH VINSON</span><h2>Planning a shipment from China to Australia?</h2><p>Share the suppliers, cargo, packed measurements and Australian destination for a shipment-specific assessment.</p></div><EnquiryActions topic="shipping from China to Australia" /></div></section>
     </main>
     <SiteFooter /><a className="float-wa" href={quoteUrl} target="_blank" rel="noreferrer" aria-label="Contact Vinson on WhatsApp"><MessageCircle /></a>

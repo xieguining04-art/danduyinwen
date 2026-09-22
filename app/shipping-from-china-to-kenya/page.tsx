@@ -3,6 +3,7 @@ import { ArrowRight, Check, MessageCircle } from "lucide-react";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { EnquiryActions } from "@/components/enquiry-actions";
+import { RelatedShippingRoutes } from "@/components/related-shipping-routes";
 import { enquiryLinks } from "@/lib/company";
 import { siteOrigin } from "@/lib/seo";
 import { sitePath } from "@/lib/site-path";
@@ -53,6 +54,7 @@ export default function KenyaShippingPage() {
     <section className="section nigeria-process" id="process"><div className="wrap"><div className="nigeria-heading"><span className="kicker"><i />HOW IT WORKS</span><h2>From China supplier to Kenyan handoff.</h2></div><ol>{[["Share the cargo", "Send cargo, sizes, weights, pickup points, ready date and destination."],["Review the method", "Compare FCL, LCL, flat rack, breakbulk or another suitable solution."],["Define the scope", "Confirm China origin, ocean freight and requested Kenya destination tasks."],["Coordinate in China", "Arrange agreed collection, export preparation and carrier handoff."],["Prepare arrival", "Share documents for Mombasa clearance, release and any inland delivery."]].map(([heading, copy], index) => <li key={heading}><span>0{index + 1}</span><div><h3>{heading}</h3><p>{copy}</p></div></li>)}</ol></div></section>
     <section className="section nigeria-quote" id="quote-checklist"><div className="wrap nigeria-content-grid"><div><span className="kicker"><i />BEFORE YOU ENQUIRE</span><h2>Send the information needed for a useful quote.</h2><p>State whether the shipment ends at Mombasa or requires an inland handoff.</p><EnquiryActions topic="shipping from China to Kenya" /></div><ul>{["Cargo description and HS code if known", "Packages, dimensions and weights", "Supplier location and ready date", "Mombasa or final Kenyan address", "Photos and packing method", "Machinery lifting points and operability", "Requested Incoterm and service scope", "Any controlled cargo characteristics"].map(item => <li key={item}><Check />{item}</li>)}</ul></div></section>
     <section className="section nigeria-faq" id="faq"><div className="wrap nigeria-content-grid"><div><span className="kicker"><i />FAQ</span><h2>China-to-Kenya shipping questions.</h2><p>Rates, schedules and acceptance are confirmed shipment by shipment.</p></div><div>{faqs.map(item => <details key={item.question}><summary>{item.question}<span>+</span></summary><p>{item.answer}</p></details>)}</div></div></section>
+    <RelatedShippingRoutes currentRoute="shipping-from-china-to-kenya" />
     <section className="blog-cta"><div className="wrap"><div><span className="kicker light"><i />A DIRECT CONVERSATION WITH VINSON</span><h2>Planning a shipment from China to Kenya?</h2><p>Share the cargo and destination for a Mombasa or inland-delivery assessment.</p></div><EnquiryActions topic="shipping from China to Kenya" /></div></section>
   </main><SiteFooter /><a className="float-wa" href={quoteUrl} target="_blank" rel="noreferrer" aria-label="Contact Vinson on WhatsApp"><MessageCircle /></a></div>;
 }

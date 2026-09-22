@@ -3,6 +3,7 @@ import { ArrowRight, Check, MessageCircle } from "lucide-react";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { EnquiryActions } from "@/components/enquiry-actions";
+import { RelatedShippingRoutes } from "@/components/related-shipping-routes";
 import { enquiryLinks } from "@/lib/company";
 import { siteOrigin } from "@/lib/seo";
 import { sitePath } from "@/lib/site-path";
@@ -159,6 +160,7 @@ export default function NigeriaShippingPage() {
 
       <section className="section nigeria-faq" id="faq"><div className="wrap nigeria-content-grid"><div><span className="kicker"><i />FAQ</span><h2>China-to-Nigeria shipping questions.</h2><p>Answers are intentionally practical and conditional because rates, routes, customs requirements and carrier acceptance can change.</p></div><div>{faqs.map(item => <details key={item.question}><summary>{item.question}<span>+</span></summary><p>{item.answer}</p></details>)}</div></div></section>
 
+      <RelatedShippingRoutes currentRoute="shipping-from-china-to-nigeria" />
       <section className="blog-cta"><div className="wrap"><div><span className="kicker light"><i />A DIRECT CONVERSATION WITH VINSON</span><h2>Planning a shipment from China to Nigeria?</h2><p>Send the actual cargo details for a route and handling assessment. You will receive a shipment-specific response—not a fictional fixed rate.</p></div><EnquiryActions topic="shipping from China to Nigeria" /></div></section>
     </main>
     <SiteFooter /><a className="float-wa" href={quoteUrl} target="_blank" rel="noreferrer" aria-label="Contact Vinson on WhatsApp"><MessageCircle /></a>

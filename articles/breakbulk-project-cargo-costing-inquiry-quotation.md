@@ -10,6 +10,8 @@ cover: /images/blog/hdd-breakbulk-project-cargo-cover.webp
 alt: HDD drilling equipment and long drill rods prepared for breakbulk shipment from China
 ---
 
+Breakbulk and project cargo quotations are built from far more than an ocean freight rate. This practical guide follows an HDD equipment inquiry from project setup and cargo verification through inland transport, heavy-lift operations, port handling, sea fastening, risk allowances and the final customer quotation.
+
 ## Why a Breakbulk Quotation Is More Than an Ocean Freight Rate
 
 A breakbulk or project cargo quotation may look like a simple request for an ocean freight rate. In practice, it is a connected engineering and commercial exercise covering cargo data, inland access, equipment selection, lifting arrangements, port capability, vessel suitability, sea fastening, insurance and contractual allocation of risk.

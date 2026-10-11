@@ -72,6 +72,8 @@ If one supplier is late, the importer must decide whether to wait or ship the av
 
 Ask each supplier for a realistic cargo-ready date rather than only the production completion date. A booking should allow time for delivery to the warehouse, receiving, measurement and export preparation.
 
+Before agreeing to wait, check the last free-storage date for each batch and compare storage against the extra cost of a partial shipment. Our [China consolidation warehouse storage guide](/blog/china-consolidation-warehouse-storage-fees/) explains free-day calculations, possible billing methods and the decision points before a booking cutoff.
+
 ## 6. Choose FCL or LCL
 
 FCL may be practical when combined orders justify a full container, when packages are difficult to handle or when the importer wants fewer cargo handoffs.

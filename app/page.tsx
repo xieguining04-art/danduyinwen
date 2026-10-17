@@ -11,7 +11,7 @@ import { EnquiryActions } from "@/components/enquiry-actions";
 import { HeroCarousel } from "@/components/hero-carousel";
 import { Reveal } from "@/components/motion";
 import { blogPosts } from "@/lib/blog-posts";
-import { homepageServices, serviceLabel } from "@/lib/services";
+import { homepageServices, homepageSupportingServices, serviceLabel } from "@/lib/services";
 import { enquiryLinks } from "@/lib/company";
 import { sitePath } from "@/lib/site-path";
 
@@ -185,9 +185,15 @@ export default function Home() {
 
       <section className="services section" id="services">
         <div className="wrap">
-          <div className="section-head"><div><span className="kicker"><i /> FROM CHINA TO THE WORLD</span><h2>Sea freight, backed by China-side support.</h2></div><div className="section-head-side"><p>Our service network extends to the Middle East, Red Sea, India, and Pakistan; Europe, the Mediterranean; Africa; the east and west coasts of South America; North America; Australia; and Southeast Asia.</p><a className="text-link" href={sitePath("/services")}>View all services<ArrowRight /></a></div></div>
+          <div className="section-head"><div><span className="kicker"><i /> FROM CHINA TO THE WORLD</span><h2>Three core ways we move complex China-origin cargo.</h2></div><div className="section-head-side"><p>Start with the shipment type: FCL or LCL sea freight, supplier consolidation in China, or vehicle, machinery and project cargo.</p><a className="text-link" href={sitePath("/services")}>View all services<ArrowRight /></a></div></div>
           <div className="service-grid core-service-grid">
             {homepageServices.map((service, index) => <Reveal key={service.slug} delay={(index % 3) * 60}><article className="service-card service-photo-card media-hover-card"><a className="service-cover" href={sitePath(`/services/${service.slug}`)} aria-label={serviceLabel(service)}><img src={sitePath(service.image)} alt={service.alt} width={1672} height={941} loading="lazy" /><span>0{index + 1}</span></a><div className="service-card-copy"><h3><a href={sitePath(`/services/${service.slug}`)}>{serviceLabel(service)}</a></h3><p>{service.content.summary}</p><a href={sitePath(`/services/${service.slug}`)}>Learn more <ArrowRight /></a></div></article></Reveal>)}
+          </div>
+          <div className="supporting-services">
+            <div><span className="kicker"><i /> SUPPORTING SERVICES</span><h3>Extra China-side support when the shipment needs it.</h3></div>
+            <div className="supporting-service-links">
+              {homepageSupportingServices.map(service => <a key={service.slug} href={sitePath(`/services/${service.slug}`)}><span>{serviceLabel(service)}</span><small>{service.content.summary}</small><ArrowRight /></a>)}
+            </div>
           </div>
           <a className="all-services" href={sitePath("/services")}>Explore all logistics services <ArrowRight /></a>
         </div>

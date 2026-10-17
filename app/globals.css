@@ -1015,3 +1015,29 @@ h1, h2, h3 { font-weight: 700; }
   .quick-enquiry h2 { font-size: 36px; }
   .quick-enquiry-card { padding: 28px 20px; }
 }
+
+
+/* Focused homepage positioning */
+.hero-proof-list { display: flex; flex-wrap: wrap; gap: 10px 24px; max-width: 900px; margin-top: 24px; }
+.hero-proof-list span { display: inline-flex; align-items: center; gap: 8px; color: #fff; font-size: 12px; font-weight: 600; line-height: 1.45; }
+.hero-proof-list svg { flex: 0 0 auto; width: 17px; height: 17px; padding: 3px; color: var(--navy); background: var(--orange); border-radius: 50%; }
+.supporting-services { display: grid; grid-template-columns: .7fr 1.3fr; gap: 70px; margin-top: 72px; padding-top: 55px; border-top: 1px solid var(--line); }
+.supporting-services h3 { max-width: 430px; margin: 16px 0 0; font-size: 30px; line-height: 1.2; letter-spacing: -.025em; }
+.supporting-service-links { display: grid; }
+.supporting-service-links a { position: relative; display: grid; grid-template-columns: minmax(150px, .55fr) 1fr 24px; gap: 24px; align-items: center; padding: 22px 0; border-bottom: 1px solid var(--line); }
+.supporting-service-links a:first-child { border-top: 1px solid var(--line); }
+.supporting-service-links span { color: var(--ink); font-size: 16px; font-weight: 600; }
+.supporting-service-links small { color: var(--muted); font-size: 12px; line-height: 1.55; }
+.supporting-service-links svg { width: 20px; color: #a64b00; transition: transform .25s ease; }
+.supporting-service-links a:hover svg, .supporting-service-links a:focus-visible svg { transform: translateX(5px); }
+@media (max-width: 820px) {
+  .hero-proof-list { display: grid; gap: 8px; margin-top: 18px; }
+  .supporting-services { grid-template-columns: 1fr; gap: 32px; margin-top: 55px; }
+}
+@media (max-width: 520px) {
+  .hero-proof-list span { font-size: 11px; }
+  .supporting-services h3 { font-size: 26px; }
+  .supporting-service-links a { grid-template-columns: 1fr 22px; gap: 7px 14px; }
+  .supporting-service-links small { grid-column: 1; }
+  .supporting-service-links svg { grid-column: 2; grid-row: 1 / span 2; }
+}

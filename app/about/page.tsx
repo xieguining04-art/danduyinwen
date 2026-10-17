@@ -10,7 +10,7 @@ import { pageMetadata, siteOrigin } from "@/lib/seo";
 import { sitePath } from "@/lib/site-path";
 
 export const metadata: Metadata = pageMetadata(
-  "About TengYoda | China Freight Forwarder & NVOCC",
+  "About TengYoda Logistics | China Freight Forwarder",
   "Learn about TengYoda Supply Chain, a China-headquartered freight forwarder with 10+ years of experience, NVOCC qualification and a team of 50+ logistics professionals.",
   "/about",
 );

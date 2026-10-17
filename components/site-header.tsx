@@ -19,7 +19,7 @@ export function SiteHeader({ active }: { active?: "about" | "blog" | "services" 
   const [navigationValue, setNavigationValue] = useState("");
   const servicesOpen = navigationValue === "services";
   const quoteUrl = enquiryLinks().whatsapp;
-  const links = [["/about", "About Us"], ["/blog", "Blog"], ["/#contact", "Contact Us"]];
+  const links = [["/about", "About Us"], ["/blog", "Blog"], ["/contact", "Contact Us"]];
   const serviceLinks = <>{services.map(service => <NavigationMenuLink asChild key={service.slug}><a href={sitePath(`/services/${service.slug}`)} className="mega-service-link"><strong>{serviceLabel(service)}</strong><ArrowRight aria-hidden="true" /></a></NavigationMenuLink>)}<NavigationMenuLink asChild><a href={sitePath("/shipping-routes")} className="mega-service-link"><strong>Country Shipping Routes</strong><ArrowRight aria-hidden="true" /></a></NavigationMenuLink></>;
   return <>
     <a className="skip-link" href="#main-content">Skip to main content</a>

@@ -5,7 +5,7 @@ summary: Learn how importers can receive, identify, check and combine products f
 category: CARGO CONSOLIDATION
 language: en
 author: TengYoda Logistics
-keywords: China warehouse consolidation, multiple supplier consolidation China, cargo consolidation process, Foshan warehouse, China export warehouse
+keywords: China warehouse consolidation, multiple supplier consolidation China, cargo consolidation process, Qingdao warehouse, Yiwu warehouse, Shenzhen warehouse
 image: /images/warehouse-operations.webp
 ---
 
@@ -115,6 +115,6 @@ Photographs of the final packing and loading can provide a useful shipment recor
 - Can the warehouse arrange palletising or cases?
 - How are final documents reconciled?
 
-TengYoda operates two self-operated logistics warehouses in Lishui and Lecong, Foshan, each covering more than 3,000 square metres.
+TengYoda coordinates cargo receiving and consolidation through warehouses in Qingdao, Yiwu and Shenzhen. Confirm the receiving location, shipping marks and delivery arrangements with Vinson before sending cargo.
 
 [Discuss your supplier consolidation plan](https://wa.me/8618620244613) or review our [cargo consolidation service](/services/cargo-consolidation).

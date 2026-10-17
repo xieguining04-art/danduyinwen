@@ -146,6 +146,36 @@ export default function Home() {
       <main id="main-content" tabIndex={-1}>
       <HeroCarousel />
 
+      <section className="conversion-proof" aria-label="TengYoda company facts">
+        <div className="wrap conversion-proof-grid">
+          <article><strong>10+</strong><span>Years of logistics experience</span></article>
+          <article><strong>NVOCC</strong><span>Qualified freight operator</span></article>
+          <article><strong>50+</strong><span>Logistics professionals</span></article>
+          <article><strong>3</strong><span>Warehouses in China</span></article>
+        </div>
+      </section>
+
+      <section className="quick-enquiry section" aria-labelledby="quick-enquiry-title">
+        <div className="wrap quick-enquiry-grid">
+          <div>
+            <span className="kicker"><i /> START WITH YOUR CARGO DETAILS</span>
+            <h2 id="quick-enquiry-title">Get a practical shipping plan, not just a freight rate.</h2>
+            <p>Send the essential shipment information. Vinson will review the cargo, identify missing details and clarify the recommended transport scope before booking.</p>
+          </div>
+          <div className="quick-enquiry-card">
+            <h3>What to send</h3>
+            <ul>
+              <li><Check />Product and package count</li>
+              <li><Check />Packed dimensions and gross weight</li>
+              <li><Check />Pickup city and cargo-ready date</li>
+              <li><Check />Destination port, city or postcode</li>
+            </ul>
+            <EnquiryActions topic="a China-origin shipping plan" />
+            <p className="response-note">Direct contact with Vinson · English and Chinese</p>
+          </div>
+        </div>
+      </section>
+
       <section className="intro section" id="about">
         <div className="wrap intro-grid">
           <figure className="intro-visual"><img src={sitePath("/images/about-tengyoda-team.webp")} alt="Freight operations team coordinating ocean, air, road and warehouse logistics in China" width={1448} height={1086} loading="lazy" /><figcaption>OCEAN · AIR · ROAD · WAREHOUSING</figcaption></figure>

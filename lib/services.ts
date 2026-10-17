@@ -25,7 +25,8 @@ export const coreServiceNames: Record<string, string> = {
 };
 export const coreServices = Object.keys(coreServiceNames).map(slug => services.find(service => service.slug === slug)!);
 // Homepage selection is independent from the full service catalog and footer.
-export const homepageServices = coreServices.map(service => service.slug === "transport-warehousing" ? getService("roro-project-cargo")! : service);
+export const homepageServices = ["sea-freight", "cargo-consolidation", "roro-project-cargo"].map(slug => getService(slug)!);
+export const homepageSupportingServices = ["international-express", "china-import-export", "transport-warehousing"].map(slug => getService(slug)!);
 export const primaryService = getService("sea-freight")!;
 export const supportingServices = coreServices.filter(service => service.slug !== primaryService.slug);
 export const specialistServices = services.filter(service => !Object.hasOwn(coreServiceNames, service.slug));

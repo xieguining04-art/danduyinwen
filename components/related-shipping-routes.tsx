@@ -1,18 +1,9 @@
 import { ArrowRight } from "lucide-react";
 import { sitePath } from "@/lib/site-path";
 
-const routes = [
-  ["shipping-from-china-to-australia", "Australia"],
-  ["shipping-from-china-to-nigeria", "Nigeria"],
-  ["shipping-from-china-to-kenya", "Kenya"],
-  ["shipping-from-china-to-usa", "United States"],
-  ["shipping-from-china-to-mexico", "Mexico"],
-  ["shipping-from-china-to-malaysia", "Malaysia"],
-  ["shipping-from-china-to-ghana", "Ghana"],
-  ["shipping-from-china-to-mozambique", "Mozambique"],
-  ["shipping-from-china-to-uae", "United Arab Emirates"],
-  ["shipping-from-china-to-saudi-arabia", "Saudi Arabia"],
-] as const;
+import { countryRoutes, existingCountryRoutes } from "@/lib/country-routes";
+
+const routes = [...existingCountryRoutes.map(r => [r.route, r.name]), ...countryRoutes.map(r => [r.route, r.shortName])];
 
 export function RelatedShippingRoutes({ currentRoute }: { currentRoute: string }) {
   const currentIndex = Math.max(0, routes.findIndex(([route]) => route === currentRoute));

@@ -3,20 +3,16 @@
 import { useState } from "react";
 import { ArrowRight } from "lucide-react";
 import { countryRoutes, existingCountryRoutes } from "@/lib/country-routes";
+import { routeRegion } from "@/lib/route-regions";
 import { company } from "@/lib/company";
 import { sitePath } from "@/lib/site-path";
 import styles from "./route-directory.module.css";
 
-const regions: Record<string, string> = {
-  australia: "Oceania", nigeria: "Africa", kenya: "Africa", usa: "Americas", mexico: "Americas",
-  malaysia: "Asia", ghana: "Africa", mozambique: "Africa", uae: "Middle East", "saudi-arabia": "Middle East",
-  oman: "Middle East", "south-africa": "Africa", canada: "Americas", "costa-rica": "Americas",
-};
 const routes = [
   ...existingCountryRoutes.map(r => ({ ...r, focus: "Supplier pickup · Sea freight · Delivery planning" })),
   ...countryRoutes.map(r => ({ route: r.route, name: r.shortName, ports: r.ports.join(" · "), focus: r.focus.join(" · ") })),
-].map(r => ({ ...r, region: regions[r.route.replace("shipping-from-china-to-", "")] }));
-const filters = ["All destinations", "Oceania", "Americas", "Middle East", "Africa", "Asia"];
+].map(r => ({ ...r, region: routeRegion(r.route) }));
+const filters = ["All destinations", "Oceania", "Americas", "Middle East", "Africa", "South Asia", "Southeast Asia", "Europe"];
 const fields = [
   ["cargo", "Product / cargo", "e.g. furniture, spare parts or machinery"],
   ["destination", "Destination country and postcode", "Include the final delivery city"],
@@ -28,21 +24,26 @@ const fields = [
 
 export function RouteDirectory() {
   const [region, setRegion] = useState("All destinations");
+  const [search, setSearch] = useState("");
   const [details, setDetails] = useState<Record<string, string>>({});
-  const shown = routes.filter(r => region === "All destinations" || r.region === region);
+  const normalize = (value: string) => value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+  const query = normalize(search.trim());
+  const shown = routes.filter(r => (region === "All destinations" || r.region === region) && normalize(`${r.name} ${r.ports} ${r.region}`).includes(query));
   const message = `Hello Vinson, I would like a China freight quote.\n\n${fields.map(([id,label]) => `${label}: ${details[id] || "To confirm"}`).join("\n")}\nSpecial cargo / requested scope: ${details.notes || "To confirm"}`;
   return <>
     <section className={`section ${styles.directory}`} id="destinations"><div className="wrap">
       <span className="kicker"><i />FIND YOUR DESTINATION</span><h2>Choose a country. Plan the complete shipment.</h2>
       <p>Explore {routes.length} country guides, then compare freight with the pickup and destination services you actually need.</p>
+      <label className={styles.search} htmlFor="route-search">Search country or port<input id="route-search" type="search" placeholder="e.g. Pakistan, New Zealand, Mombasa" value={search} onChange={e => setSearch(e.target.value)} /></label>
       <div className={styles.filters} role="group" aria-label="Filter destinations by region">{filters.map(f => <button type="button" key={f} aria-pressed={region === f} onClick={() => setRegion(f)}>{f}</button>)}</div>
-      <p className={styles.count} aria-live="polite">{shown.length} destinations · {region}</p>
+      <p className={styles.count} aria-live="polite">{shown.length} destinations · {region}{search.trim() && ` · Matching “${search.trim()}”`}</p>
+      {shown.length === 0 && <div className={styles.note}><p>No matching destination in this selection.</p><button type="button" onClick={() => { setSearch(""); setRegion("All destinations"); }}>Clear search and filters</button><p><a href="#route-enquiry">Ask about another destination</a></p></div>}
       <div className={styles.grid}>{shown.map(r => <article className={styles.card} key={r.route}>
         <span className="kicker"><i />{r.region}</span><h3><a href={sitePath(`/${r.route}`)}>China → {r.name}</a></h3>
         <p>{r.ports}</p><p className={styles.focus}>{r.focus}</p>
         <div className={styles.actions}><a className="text-link" href={sitePath(`/${r.route}`)}>View route<ArrowRight aria-hidden="true" /></a><a href={`${company.whatsapp}?text=${encodeURIComponent(`Hello Vinson, I would like a quote for shipping from China to ${r.name}.`)}`} target="_blank" rel="noreferrer">Ask for a quote</a></div>
       </article>)}</div>
-      <p className={styles.note}>Ports are planning references, not promises of a direct sailing or guaranteed cargo acceptance. Current routing, destination handling and delivery availability are confirmed for each shipment.</p>
+      <p className={styles.note}>For landlocked countries, listed ports are third-country transit gateways. Ports are planning references, not promises of a direct sailing or guaranteed cargo acceptance. Current routing, destination handling and delivery availability are confirmed for each shipment.</p>
     </div></section>
     <section className={`section ${styles.enquiry}`} id="route-enquiry"><div className={`wrap ${styles.enquiryGrid}`}>
       <div><span className="kicker"><i />YOUR NEXT SHIPMENT</span><h2>Destination not listed? Ask us about your shipment.</h2><p>Share the cargo and final address. TengYoda can assess China pickup, supplier consolidation, international freight and the requested destination handoff.</p><p>For batteries, liquids, chemicals, used machinery or oversized pieces, include those details before arranging supplier delivery.</p><p>For machinery, add the transport dimensions of each piece, operating condition and site unloading requirements.</p></div>

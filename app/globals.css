@@ -1041,3 +1041,6 @@ h1, h2, h3 { font-weight: 700; }
   .supporting-service-links small { grid-column: 1; }
   .supporting-service-links svg { grid-column: 2; grid-row: 1 / span 2; }
 }
+
+/* Preserve the full reading order of the US import infographic. */
+.article-media img[src$="/first-us-import-planning-guide.webp"] { max-height: none; object-fit: contain; }
